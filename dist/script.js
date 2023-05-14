@@ -1,3 +1,26 @@
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
 window.onscroll = function () {
   menu();
 };
@@ -7,8 +30,10 @@ function menu() {
   if (document.documentElement.scrollTop > 1) {
     document.getElementById("nav-name").classList.add("text-black");
     document.getElementById("logo").classList.add("lg:text-black");
+    document.getElementById("nav-name").classList.add("dark:lg:text-white");
     document.getElementById("logo").classList.remove("lg:text-white");
     document.getElementById("nav").classList.add("bg-white");
+    document.getElementById("nav").classList.add("dark:bg-dark");
     document.getElementById("o").classList.add("overflow-hidden");
     document.getElementById("nav").classList.add("fixed");
     document.getElementById("nav").classList.add("w-full");
@@ -186,26 +211,3 @@ function gohome() {
   }
 }
 
-const darkToggle = document.querySelector("#dark-toggle");
-const html = document.querySelector("html");
-
-darkToggle.addEventListener("click", function () {
-  if (darkToggle.checked) {
-    html.classList.add("dark");
-    localStorage.theme = "dark";
-  } else {
-    html.classList.remove("dark");
-    localStorage.theme = "light";
-  }
-});
-
-
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
