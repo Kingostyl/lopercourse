@@ -16,14 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/output.css">
-    <!-- <style>
-        @media screen and (max-width: 1000px) {
-            .star {
-                display: flex;
-                flex-direction: column;
-            }
+    <script>
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
         }
-    </style> -->
+    </script>
+    
 </head>
 
 <body class="bdy font-quicksand scroll-smooth dark:bg-dark">
