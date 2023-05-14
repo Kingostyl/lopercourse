@@ -164,7 +164,8 @@
                                             flex-col bg-white divide-y divide-gray-100 rounded-lg shadow w-36">
                                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                                                 <li>
-                                                    <a href="./profile.html" class="block px-4 py-2 hover:bg-gray-100 font-medium">My
+                                                    <a href="./profile.html"
+                                                        class="block px-4 py-2 hover:bg-gray-100 font-medium">My
                                                         page</a>
                                                 </li>
                                             </ul>
@@ -175,7 +176,8 @@
                                             </div>
                                         </div>
                                         <div class="flex gap-32">
-                                            <a href="./profile.html" class="md:hidden flex items-center justify-end font-bold">Sign
+                                            <a href="./profile.html"
+                                                class="md:hidden flex items-center justify-end font-bold">Sign
                                                 out</a>
                                         </div>
                                     </div>
@@ -311,7 +313,7 @@
                     </span>
                 </div>
                 <div class="star flex flex-row-reverse lg:flex-nowrap flex-wrap  gap-14  items-center">
-                    <img src="https://storage.googleapis.com/cms-storage-bucket/ed2e069ee37807f5975a.jpg" alt=""
+                    <img src="../assets/img/responsive.png" alt=""
                         class="w-[400px] md:w-[587px] md:h-[570px] h-auto ">
                     <span class="flex flex-col gap-5">
                         <h3 class="font-bold  text-center lg:text-start text-3xl">Support semua device
@@ -381,9 +383,9 @@
     </main>
 
     <main
-        class="mt-20 w-screen scroll-smooth snap-x overflow-x-auto overflow-visible px-10 h-[60vh] lg:h-auto py-10 lg:px-4 bg-[#f8f9fa] flex gap-8 ">
+        class="mt-20 overflow-x-auto w-screen scroll-smooth overflow-visible px-10 h-[60vh] lg:h-auto py-10 lg:px-4 bg-[#f8f9fa] flex gap-8 ">
         <div
-            class="bg-white relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            class="bg-white item relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
             <span
                 class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
             <div class="mx-10 absolute group-hover:text-white">
@@ -399,7 +401,7 @@
             </div>
         </div>
         <div
-            class="bg-white relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            class="bg-white relative item items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
             <span
                 class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
             <div class="mx-10 absolute group-hover:text-white">
@@ -415,7 +417,7 @@
             </div>
         </div>
         <div
-            class="relative items-center justify-start overflow-hidden  hover:bg-white group bg-white cursor-pointer transition shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            class="relative items-center item justify-start overflow-hidden  hover:bg-white group bg-white cursor-pointer transition shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
             <span
                 class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
             <div class="mx-10 absolute group-hover:text-white">
@@ -431,7 +433,7 @@
             </div>
         </div>
         <div
-            class="relative items-center justify-start overflow-hidden  hover:bg-white group cursor-pointer -mr-[90rem] lg:-mr-[60rem] bg-white shadow-xl drop-shadow-xl transition duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            class="relative items-center item justify-start overflow-hidden  hover:bg-white group cursor-pointer -mr-[90rem] lg:-mr-[60rem] bg-white shadow-xl drop-shadow-xl transition duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
             <span
                 class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
             <div class="mx-10 absolute group-hover:text-white">
@@ -524,6 +526,20 @@
         </div>
     </footer>
 
+    <input type="checkbox" class="hidden" id="dark-toggle" />
+    <label for="dark-toggle">
+        <div
+            class="flex cursor-pointer hover:text-slate-900 ease-in transition-all duration-300 dark:bg-white bg-dark border-white border-4 dark:border-4 dark:border-dark items-center justify-center fixed bottom-0 right-0  mb-3 w-12 h-12  text-white mr-2 z-50 rounded-full">
+            <i class="fa-solid fa-moon dark:hidden block text-white"></i>
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="w-6 h-6 dark:block hidden">
+                <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-dark"></path>
+                <path
+                    d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                    class="stroke-dark"></path>
+            </svg>
+        </div>
+    </label>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
