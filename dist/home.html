@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/icon.png">
+    <title>Lopercourse - indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <!-- <style>
+        @media screen and (max-width: 1000px) {
+            .star {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style> -->
+</head>
+
+<body class="bdy font-quicksand scroll-smooth ">
+    <div class="overflow-x-hidden bg-gradient-to-t from-orange-500 to-orange-300 md:h-full bg-cover w-full">
+        <header id="nav">
+            <div class="relative z-20">
+                <div class="px-6  md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-4">
+
+                    <div class="flex items-center justify-between">
+                        <div class="relative z-20 flex items-center gap-3">
+                            <img src="../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
+                            <a href="./home.html" class="lg:text-white font-bold text-xl" id="logo">
+                                Lopercourse
+                            </a>
+                        </div>
+
+                        <div class="flex items-center justify-end">
+                            <input type="checkbox" name="hamburger" id="hamburger" onclick="hide()" class="peer" hidden>
+                            <label for="hamburger"
+                                class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
+                                <div aria-hidden="true"
+                                    class="m-auto h-0.5 w-6 rounded bg-orange-500 transition duration-300"></div>
+                                <div aria-hidden="false"
+                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-orange-500 transition duration-300"></div>
+
+                            </label>
+
+                            <div
+                                class="peer-checked:translate-x-0 bg-white lg:bg-white/0  inset-0 lg:text-white translate-x-[-100%]  fixed bg-transparent w-full shadow-xl transition duration-300  lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
+                                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row" id="o">
+                                    <ul id="nav-name"
+                                        class="px-6 pt-20  space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
+                                        <div class="hidden lg:flex flex-col">
+                                            <li
+                                                class="lg:h-9 group  peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
+                                                <span class="relative">Category</span>
+                                            </li>
+                                            <div class="hidden lg:peer-hover:flex lg:hover:flex
+                                            w-52
+                                            flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
+                                                <li
+                                                    class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
+                                                    <a href="../dist/category/Back-end-dev.html"> Back-end
+                                                </li></a>
+                                                <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
+                                                        href="../dist/category/Front-end-dev.html"> Front-end</li></a>
+                                                <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
+                                                        href="./category/Android-dev.html">Android</li></a>
+                                                <li
+                                                    class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
+                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                </li></a>
+                                            </div>
+                                        </div>
+                                        <div class="lg:hidden flex flex-col" onclick="drop()">
+                                            <li
+                                                class="group cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
+                                                <span class="relative">Category</span>
+                                            </li>
+                                            <div class="hidden group-focus:block lg:bg-white text-black  rounded-md lg:h-60 gap-3 lg:transition lg:duration-300 w-52 lg:shadow-lg lg:absolute mt-6 lg:mt-10 "
+                                                id="down">
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200">
+                                                    <a href="./category/Back-end-dev.html"> Back-end
+                                                </li></a>
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200">
+                                                    <a href="./category/Front-end-dev.html"> Front-end
+                                                </li></a>
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200">
+                                                    <a href="./category/Android-dev.html">Android
+                                                </li></a>
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200">
+                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                </li></a>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <a href="#"
+                                                class="group font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative ">Price</span>
+                                            </a>
+                                        </li>
+                                        <div class="hidden lg:flex flex-col">
+                                            <li
+                                                class="lg:h-9 group  peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
+                                                <span class="relative">Blog</span>
+                                            </li>
+                                            <div class="hidden lg:peer-hover:flex lg:hover:flex
+                                            w-52
+                                            flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
+                                                <li
+                                                    class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
+                                                    <a href="#">News
+                                                </li></a>
+                                                <li
+                                                    class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
+                                                    <a href="#">About
+                                                </li></a>
+                                            </div>
+                                        </div>
+                                        <div class="lg:hidden flex flex-col" onclick="blog()">
+                                            <li
+                                                class="group cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
+                                                <span class="relative">Blog</span>
+                                            </li>
+                                            <div class="hidden group-focus:block lg:bg-white text-black  rounded-md lg:h-60 gap-3 lg:transition lg:duration-300 w-52 lg:shadow-lg lg:absolute mt-6 lg:mt-10 "
+                                                id="dwn">
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200 ">
+                                                    <a href="#">News
+                                                </li></a>
+                                                <li
+                                                    class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black font-medium hover:bg-gray-200">
+                                                    <a href="#">About
+                                                </li></a>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <a href="#"
+                                                class="group font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
+                                                <span class="relative ">Support</span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <div
+                                        class="py-8 before:flex-col flex gap-4 px-1 md:px-12 md:py-16  lg:py-0 lg:pr-0 lg:pl-0">
+                                        <div class="lg:h-10 peer cursor-pointer font-medium relative">
+                                            <img src="../assets/img/pweson.avif" alt="" class="h-10 w-10 rounded-full">
+                                        </div>
+                                        <div class="z-50 hidden lg:peer-hover:flex  absolute md:mt-[42px] lg:hover:flex
+                                            
+                                            flex-col bg-white divide-y divide-gray-100 rounded-lg shadow w-36">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                                <li>
+                                                    <a href="./profile.html" class="block px-4 py-2 hover:bg-gray-100 font-medium">My
+                                                        page</a>
+                                                </li>
+                                            </ul>
+                                            <div class="py-1">
+                                                <a href="./signin.html"
+                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-medium">Sign
+                                                    out</a>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-32">
+                                            <a href="./profile.html" class="md:hidden flex items-center justify-end font-bold">Sign
+                                                out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-20">
+            <div>
+                <div id="text"
+                    class="text-3xl md:text-6xl font-medium  text-white flex items-center text-center px-1 md:px-32 justify-center">
+                    Bangun Karirmu Sebagai Developer Profesional
+                </div>
+
+                <div class="mt-32 grid items-center justify-center px-10 md:px-3">
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="translate-y-32">
+                                <img class="border-4 border-white h-auto max-w-full rounded-lg"
+                                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div>
+                                <img class="border-4 border-white h-auto max-w-full rounded-lg"
+                                    src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class=" grid gap-4" data-aos="fade-up" data-aos-duration="3000">
+
+                            <div class="  md:translate-y-32">
+                                <img class="border-4 border-white h-auto max-w-full rounded-lg"
+                                    src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
+                            <div>
+                                <img class=" border-4 border-white h-auto max-w-full rounded-lg"
+                                    src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-white px-1 md:px-0 mt-52 flex flex-col items-center justify-center gap-10 py-8">
+                <p class="text-3xl font-semibold text-center px-0 lg:px-72">
+                    Lopercourse transforms the app development process. Build, test, and deploy beautiful mobile,
+                    web,
+                    desktop, and embedded apps from a single codebase.</p>
+                <button
+                    class=" w-[200px] flex items-center justify-center py-3 text-orange-500 font-semibold rounded-3xl scroll-smooth bg-white "><a
+                        href="#">Belajar Sekarang</a></button>
+            </div>
+        </main>
+
+    </div>
+    <main class="mt-32 bg-white px-10 md:px-32">
+        <div>
+            <div class="w-full bg-orange-500 rounded-lg h-[100px] flex gap-4 items-center px-6">
+                <img src="https://storage.googleapis.com/cms-storage-bucket/a40ceb6e5d342207de7b.png" alt=""
+                    class="w-[50px] h-[54px]">
+                <div class="flex gap-3 items-center">
+                    <button class="font-medium text-white">Priit, ada promo loh cek sekarang</button>
+                    <i class="fa-solid fa-arrow-right w-10 h-10 text-white flex items-center"></i>
+                </div>
+            </div>
+
+
+            <div class="flex mt-16 items-center justify-center">
+                <span class="text-center font-semibold lg:w-[55%] text-3xl ">Flutter is an open source framework by
+                    Google
+                    for building beautiful, natively compiled, multi-platform applications from a single
+                    codebase.</span>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="lg:w-2/6 mt-32 h-9 gap-10 items-center justify-between px-2 flex rounded-2xl bg-gray-50">
+                    <span
+                        class="font-semibold text-orange-500 text-lg cursor-pointer hover:bg-orange-500 hover:text-white rounded-2xl px-4 transition duration-300"
+                        onclick="cepat()">Cepat</span>
+                    <span
+                        class="font-semibold text-orange-500 text-lg cursor-pointer hover:bg-orange-500 hover:text-white rounded-2xl px-4 transition duration-300"
+                        onclick="simple()">Simple</span>
+                    <span
+                        class="font-semibold text-orange-500 text-lg cursor-pointer hover:bg-orange-500 hover:text-white rounded-2xl px-4 transition duration-300"
+                        onclick="detail()">Detail</span>
+                </div>
+            </div>
+            <div class="mt-22">
+                <div id="cpt" class="star flex lg:flex-nowrap flex-wrap  gap-14  items-center">
+                    <video src="../assets/movie/fast.mp4" autoplay muted loop
+                        class="w-[400px] md:w-[600px] md:h-[570px] h-auto "></video>
+                    <span class="flex flex-col gap-5">
+                        <h3 class="font-bold text-orange-500 text-center lg:text-start text-3xl">Cepat paham untuk
+                            pemula
+                        </h3>
+                        <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start">Mulai belajar terarah
+                            dengan lopercourse cepat memahami karna tutor yang berpengalaman</p>
+                    </span>
+                </div>
+                <div id="smp" class="star hidden lg:flex-nowrap flex-wrap  gap-14  items-center">
+                    <video src="../assets/movie/simple.mp4" autoplay muted loop
+                        class="w-[400px] md:w-[600px] md:h-[570px] h-auto "></video>
+                    <span class="flex flex-col gap-5">
+                        <h3 class="font-bold text-orange-500 text-center lg:text-start text-3xl">Simple paham untuk
+                            pemula
+                        </h3>
+                        <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start">belajar lebih simple
+                            dibandingkan web lain karna mengunakan metod cepat tapi paham</p>
+                    </span>
+                </div>
+                <div id="dtl" class="star hidden lg:flex-nowrap flex-wrap  gap-14  items-center">
+                    <video src="../assets/movie/detail.mp4" autoplay muted loop
+                        class="w-[400px] md:w-[600px] md:h-[570px] h-auto "></video>
+                    <span class="flex flex-col gap-5">
+                        <h3 class="font-bold text-orange-500 text-center lg:text-start text-3xl">detail paham untuk
+                            pemula
+                        </h3>
+                        <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start">kursus kami menyediakan
+                            secara detail tentang ilmu tehnologi untuk pemula</p>
+                    </span>
+                </div>
+                <div class="star flex flex-row-reverse lg:flex-nowrap flex-wrap  gap-14  items-center">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/ed2e069ee37807f5975a.jpg" alt=""
+                        class="w-[400px] md:w-[587px] md:h-[570px] h-auto ">
+                    <span class="flex flex-col gap-5">
+                        <h3 class="font-bold  text-center lg:text-start text-3xl">Support semua device
+                        </h3>
+                        <p class="font-medium text-xl lg:w-[60%] text-center lg:text-start">website kami telah
+                            responsive agar mempermudahkan custumer belajar kapan saja dan dimana saja</p>
+                    </span>
+                </div>
+                <div class="star flex lg:flex-nowrap flex-wrap  gap-14  items-center">
+                    <img src="https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1436&q=80"
+                        alt="" class="w-[400px] md:w-[587px] md:h-[400px] rounded h-auto ">
+                    <span class="flex flex-col gap-5">
+                        <h3 class="font-bold text-orange-500 text-center lg:text-start text-3xl">Terpercaya oleh banyak
+                            orang
+                        </h3>
+                        <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start">lopercourse didukung dan
+                            digunakan oleh junior devloper, dipercaya oleh merek terkenal di seluruh dunia, dan dikelola
+                            oleh
+                            komunitas developer global.</p>
+                    </span>
+                </div>
+            </div>
+            <div class="my-32 bg-white px-1 md:px-32">
+                <div
+                    class="flex flex-wrap lg:flex-nowrap bg-gradient-to-r px-5 from-red-400 to-yellow-50 w-full lg:h-[350px] rounded-xl">
+                    <div class="flex flex-col gap-3 pt-3 md:pt-0 items-center lg:items-start justify-center">
+                        <span class="text-3xl font-semibold">Developer berkata</span>
+                        <span class="text-xl font-medium md:w-[80%] text-center lg:text-start">anda memberi kami membagi
+                            menggunakan lopercourse untuk mengubah dunia</span>
+                    </div>
+                    <div class="flex">
+                        <img src="https://storage.googleapis.com/cms-storage-bucket/17b428191082bb916954.png" alt=""
+                            class="w-[500px]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-10 flex-wrap items-center justify-center">
+                <div
+                    class="bg-[#f8f9fa] hover:translate-y-0 transition duration-300 -translate-y-5 w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/f3e315ddcd534a574bb5.svg" alt=""
+                        class="">
+                </div>
+                <div
+                    class="bg-[#f8f9fa]  w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/0b591100c77c7f332b7f.svg" alt=""
+                        class=" w-[110px]">
+                </div>
+                <div
+                    class="bg-[#f8f9fa] hover:translate-y-0 transition duration-300 translate-y-5 w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/cms-storage-bucket/b69d05d69cd668df2f8c.svg" alt="">
+                </div>
+            </div>
+
+            <div class="my-32">
+                <div class="flex flex-col gap-9 items-center justify-center ">
+                    <h1 class="text-center font-medium text-gray-600 text-2xl">A Global Open Source Community</h1>
+                    <p class="text-center font-semibold text-5xl lg:w-[50%] ">Supported by Google, open to everyone
+                    </p>
+                    <p class="text-center font-medium text-base lg:w-[50%] ">Berkolaborasi pada kerangka kerja sumber
+                        terbuka, berkontribusi pada ekosistem paket di lopercourse, dan temukan bantuan saat Anda
+                        membutuhkannya.
+                    </p>
+                </div>
+            </div>
+
+    </main>
+
+    <main
+        class="mt-20 w-screen scroll-smooth snap-x overflow-x-auto overflow-visible px-10 h-[60vh] lg:h-auto py-10 lg:px-4 bg-[#f8f9fa] flex gap-8 ">
+        <div
+            class="bg-white relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            <span
+                class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+            <div class="mx-10 absolute group-hover:text-white">
+                <div class="flex mt-14">
+                    <img src="../assets/img/back-end-devloper.jpg" alt="" class="rounded-lg">
+                </div>
+
+                <p class="font-semibold text-xl md:text-3xl my-3 lg:mt-4">Back-End Devloper</p>
+
+                <div class="flex font-medium items-center my-3 lg:mt-6">
+                    <p class="text-base">Read More <a href="#"><i class="fa-solid fa-arrow-right fa-2xs"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-white relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            <span
+                class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+            <div class="mx-10 absolute group-hover:text-white">
+                <div class="flex mt-14">
+                    <img src="../assets/img/front-end-devloper.jpg" alt="" class="rounded-lg">
+                </div>
+
+                <p class="font-semibold text-xl md:text-3xl my-3 lg:mt-4">Front-End Devloper</p>
+
+                <div class="flex font-medium items-center my-3 lg:mt-6">
+                    <p class="text-base">Read More <a href="#"><i class="fa-solid fa-arrow-right fa-2xs"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative items-center justify-start overflow-hidden  hover:bg-white group bg-white cursor-pointer transition shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            <span
+                class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+            <div class="mx-10 absolute group-hover:text-white">
+                <div class="flex mt-14 ">
+                    <img src="../assets/img/mobile-devloper.png" alt="" class="rounded-lg">
+                </div>
+
+                <p class="font-semibold text-xl md:text-3xl my-3 lg:mt-4">Android Devloper</p>
+
+                <div class="flex font-medium items-center my-3 lg:mt-6">
+                    <p class="text-base">Read More <a href="#"><i class="fa-solid fa-arrow-right fa-2xs"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative items-center justify-start overflow-hidden  hover:bg-white group cursor-pointer -mr-[90rem] lg:-mr-[60rem] bg-white shadow-xl drop-shadow-xl transition duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
+            <span
+                class="w-0 h-0 rounded bg-orange-500 absolute bottom-0 left-0 ease-out duration-300 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+            <div class="mx-10 absolute group-hover:text-white">
+                <div class="flex mt-14">
+                    <img src="../assets/img/desktop-devloper.jpg" alt="" class="rounded-lg">
+                </div>
+
+                <p class="font-semibold text-xl md:text-3xl my-3 lg:mt-4">Multi-Platform Devloper</p>
+
+                <div class="flex font-medium items-center my-3 lg:mt-6">
+                    <p class="text-base">Read More <a href="#"><i class="fa-solid fa-arrow-right fa-2xs"></i></a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white ">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <img src="../assets/img/icon.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap">Lopercourse</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                        <ul class="text-gray-600 ont-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm  list-none font-semibold text-gray-900 uppercase">Community</h2>
+                        <ul class="text-gray-600 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
+                        <ul class="text-gray-600 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <div class="flex mt-4 justify-center gap-3 mx-auto sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

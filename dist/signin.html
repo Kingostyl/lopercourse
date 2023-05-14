@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/icon.png">
+    <title>sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="../assets/css/output.css" rel="stylesheet" />
+</head>
+
+<body class="overflow-hidden font-quicksand">
+
+    <div class="lg:bg-[url('https://images.unsplash.com/photo-1614790871804-fe037bdc1214?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] lg:float-right lg:w-2/4 lg:bg-cover bg-center  lg:h-screen">
+    </div>
+
+    <div class="flex flex-col">
+        <div class="mt-11 px-16 flex gap-4 items-center">
+            <img src="../assets/img/icon.png" alt="" class="rounded-full w-14" />
+            <p class="text-black text-xl font-bold">Lopercourse</p>
+        </div>
+
+        <form class="space-y-4 md:space-y-6 mt-16 py-3 flex flex-col items-center justify-center"
+            onsubmit="return false">
+            <div class="flex flex-col items-center gap-2">
+                <h1 class="text-5xl font-bold">Hai apa kabar!</h1>
+                <p class="text-gray-500 text-xl">Selamat datang di LoperCourse</p>
+            </div>
+            <div class="px-10 items-center justify-center flex flex-col gap-7">
+            <div>
+                <input type="email" name="email" id="email"
+                    class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none  outline-none focus:ring-2 focus:ring-orange-500 text-gray-900 sm:text-sm rounded-xl block w-[50vh] h-14 p-2.5"
+                    placeholder="name@company.com" />
+                <p class="text-pink-600 font-bold text-sm" id="email-alert"></p>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Password"
+                    class="bg-gray-50 border-2 md:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-orange-500 text-gray-900 sm:text-sm rounded-xl block w-[50vh] h-14 p-2.5" />
+                <p class="text-pink-600 font-bold text-sm" id="password-alert"></p>
+            </div>
+            <div class="flex justify-end w-full">
+                <a href="#" class="text-lg font-medium hover:underline">Lupa password?</a>
+            </div>
+            <button type="submit"
+                class="w-[50vh] h-14 bg-orange-500 hover:bg hover:bg-white hover:ring-2 hover:ring-orange-500 duration-150 transition focus:outline-none font-medium rounded-full text-lg px-5 py-2.5 text-center text-white hover:text hover:text-orange-500"
+                onclick="gohome()">
+                Sign in
+            </button>
+            <p class="text-base font-medium">
+                Don’t have an account?
+                <a href="./signup.html" class="font-medium hover:underline text-orange-500">Sign up</a>
+            </p>
+        </div>
+        </form>
+    </div>
+
+    <script src="../dist/script.js"></script>
+</body>
+
+</html>
