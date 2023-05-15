@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-quicksand">
+<body class="font-quicksand scroll-smooth">
     <div
         class="w-full  h-screen flex-col-reverse md:flex md:flex-row gap-5 flex md:gap-4 items-center px-10 md:px-32 bg-gray-50">
         <div class="flex flex-col gap-5">
@@ -25,9 +25,9 @@
             <p class="font-medium text-base md:w-[80%]">Bebas lakukan apa saja bersama lopercourse course terbaik di
                 Indonesia. Lebih fleksibel, lebih cepat, dan lebih punya power.</p>
             <div class="flex flex-col gap-4">
-                <button
+                <a href="#daftar"
                     class="flex items-center justify-center md:w-52 h-12 md:h-10 bg-slate-800 hover:bg-dark transition-all duration-300 ease-out rounded-md text-white shadow-lg font-semibold">Pilih
-                    Sekarang</button>
+                    Sekarang</a>
                 <span class="flex gap-3 items-center"><svg data-v-46eb5075="" data-v-794febe0=""
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24" aria-label="check" role="presentation"
                         class="h-features-header__list-item-icon h-icon-success" data-v-f3a08e8e=""
@@ -48,11 +48,11 @@
         </div>
     </div>
 
-    <span class="px-10 mt-10 text-4xl font-bold text-center flex justify-center items-center">Daftar Harga
+    <span id="daftar" class="px-10 mt-10 text-4xl font-bold text-center flex justify-center items-center">Daftar Harga
         lopercourse</span>
     <div class="mt-32 px-10 md:px-32">
 
-        <div class="flex gap-5 lg:flex-row  flex-col items-center justify-center">
+        <div class="flex gap-5 mb-10 lg:flex-row  flex-col items-center justify-center">
             <div class="rounded-md lg:w-[264px] w-full lg:h-[500px] border border-dark/10">
                 <div class="flex flex-col mx-5 my-7 gap-5">
                     <span class="font-semibold text-2xl">Back-end dev</span>
@@ -90,7 +90,8 @@
 
                     <h1 class="flex items-center font-normal">Rp<p class="text-3xl font-bold">250.000</p>/bln</h1>
 
-                    <button class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
+                    <button class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md"
+                        onclick="back()">Beli
                         Sekarang</button>
                 </div>
             </div>
@@ -133,7 +134,8 @@
 
                     <h1 class="flex items-center font-normal">Rp<p class="text-3xl font-bold">129.000</p>/bln</h1>
 
-                    <button class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
+                    <button onclick="back1()"
+                        class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
                         Sekarang</button>
                 </div>
             </div>
@@ -177,7 +179,8 @@
 
                     <h1 class="flex items-center font-normal">Rp<p class="text-3xl font-bold">187.900</p>/bln</h1>
 
-                    <button class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
+                    <button onclick="back2()"
+                        class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
                         Sekarang</button>
                 </div>
             </div>
@@ -219,7 +222,8 @@
 
                     <h1 class="flex items-center font-normal">Rp<p class="text-3xl font-bold">231.900</p>/bln</h1>
 
-                    <button class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
+                    <button onclick="back3()"
+                        class="w-full h-12 bg-dark text-white text-xl font-semibold rounded-md">Beli
                         Sekarang</button>
                 </div>
             </div>
@@ -233,22 +237,26 @@
                     alt="">
             </div>
             <div class="flex flex-col gap-9 mt-10 md:mt-0 md:px-32">
-            <div class="flex flex-col gap-5">
-                <span class="font-bold text-3xl ">Mau kelas Paling Murah? Ya, Pilih Front-end dev!</span>
-                <span class="font-medium text-base md:w-[60%]">Tampil beda dengan Front-End. Selalu tersedia kapan pun Anda ingin berlangganan.
-                </span>
+                <div class="flex flex-col gap-5">
+                    <span class="font-bold text-3xl ">Mau kelas Paling Murah? Ya, Pilih Front-end dev!</span>
+                    <span class="font-medium text-base md:w-[60%]">Tampil beda dengan Front-End. Selalu tersedia kapan
+                        pun Anda ingin berlangganan.
+                    </span>
+                </div>
+                <div class="flex flex-col gap-5 ">
+                    <span class="font-semibold text-2xl ">Beda dari yang lain</span>
+                    <span class="font-medium text-base md:w-[80%]">dengan Front-End bikin website atau Freelancer online
+                        Anda makin unik, menonjol, dan terlihat berbeda dari yang lain, karna anda belajar di
+                        lopercourse.
+                    </span>
+                </div>
+                <div class="flex flex-col gap-5 ">
+                    <span class="font-semibold text-2xl ">Harga yang bersahabat</span>
+                    <span class="font-medium text-base md:w-[80%]">Peluang ketersediaan Front-End masih tinggi dan bisa
+                        jadi alternatif murah dari daripada lain. buat website anda sendiri.
+                    </span>
+                </div>
             </div>
-            <div class="flex flex-col gap-5 ">
-                <span class="font-semibold text-2xl ">Beda dari yang lain</span>
-                <span class="font-medium text-base md:w-[80%]">dengan Front-End bikin website atau Freelancer online Anda makin unik, menonjol, dan terlihat berbeda dari yang lain, karna anda belajar di lopercourse.
-                </span>
-            </div>
-            <div class="flex flex-col gap-5 ">
-                <span class="font-semibold text-2xl ">Harga yang bersahabat</span>
-                <span class="font-medium text-base md:w-[80%]">Peluang ketersediaan Front-End masih tinggi dan bisa jadi alternatif murah dari daripada lain. buat website anda sendiri.
-                </span>
-            </div>
-        </div>
         </div>
     </main>
 
@@ -329,6 +337,228 @@
             </div>
         </div>
     </footer>
+
+
+
+    <div class="max-w-2xl mx-auto">
+        <div id="popup"
+            class="hidden overflow-x-hidden backdrop-blur-md bg-black/30 overflow-y-auto fixed md:h-full top-0 left-0 right-0 z-50 justify-center items-center">
+            <div class="relative w-full max-w-2xl px-4 h-screen md:mt-0 mt-[20vh] md:h-auto">
+                <div
+                    class="bg-white h-auto md:h-[500px] rounded-lg relative flex flex-col items-center py-10 justify-center">
+                    <div class="flex flex-col gap-6">
+                        <form action="" onsubmit="return false" class="flex flex-col gap-6">
+                            <label for="email" class="">
+                                <input type="email"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="name@eample.com" name="email" id="email">
+                                <p class="text-pink-600 font-bold text-sm" id="phone-alert"></p>
+                            </label>
+                            <label for="number" class="">
+                                <input type="number"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex  w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="pin anda" name="number" id="number">
+                                <p class="text-pink-600 font-bold text-sm" id="pin-alert"></p>
+                            </label>
+                        </form>
+
+                        <div class="flex gap-2 sm:gap-0 justify-between flex-col items-center sm:flex-row ">
+                            <div onclick="backend()" id="backend"
+                                class="bg-dark cursor-pointer transition duration-300 rounded-md w-[98px] h-[30px] flex items-center justify-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1024px-Logo_dana_blue.svg.png"
+                                    alt="" class="h-5">
+                            </div>
+                            <div class="flex gap-5">
+                                <h1 class="font-semibold">jumlah Tagihan:</h1>
+                                <p class="font-medium">250.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-semibold mt-9 px-14 text-center text-base">
+                        lopercourse menyediakan layanan kursus terbaik di Indonesia dengan fitur terlengkap dan
+                        dukungan support 24 jam
+                        untuk kemudahan Anda meraih kesuksesan online!
+                    </div>
+
+                    <div class="flex gap-5 items-center p-6 rounded-b">
+                        <button onclick="downloadback()"
+                            class="bg-dark text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            I accept
+                        </button>
+                        <button onclick="cancel()"
+                            class="bg-white border border-dark  rounded-lg text-sm font-medium px-5 py-2.5">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto">
+        <div id="popup2"
+            class="hidden overflow-x-hidden backdrop-blur-md bg-black/30 overflow-y-auto fixed md:h-full top-0 left-0 right-0 z-50 justify-center items-center">
+            <div class="relative w-full max-w-2xl px-4 h-screen md:mt-0 mt-[20vh] md:h-auto">
+                <div
+                    class="bg-white h-auto md:h-[500px] rounded-lg relative flex flex-col items-center py-10 justify-center">
+                    <div class="flex flex-col gap-6">
+                        <form action="" onsubmit="return false" class="flex flex-col gap-6">
+                            <label for="email" class="">
+                                <input type="email"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="name@eample.com" name="email" id="email">
+                                <p class="text-pink-600 font-bold text-sm" id="phone-alert2"></p>
+                            </label>
+                            <label for="number" class="">
+                                <input type="number"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex  w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="pin anda" name="number" id="number">
+                                <p class="text-pink-600 font-bold text-sm" id="pin-alert2"></p>
+                            </label>
+                        </form>
+
+                        <div class="flex gap-2 sm:gap-0 justify-between flex-col items-center sm:flex-row ">
+                            <div onclick="backend()" id="backend"
+                                class="bg-dark cursor-pointer transition duration-300 rounded-md w-[98px] h-[30px] flex items-center justify-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1024px-Logo_dana_blue.svg.png"
+                                    alt="" class="h-5">
+                            </div>
+                            <div class="flex gap-5">
+                                <h1 class="font-semibold">jumlah Tagihan:</h1>
+                                <p class="font-medium">129.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-semibold mt-9 px-14 text-center text-base">
+                        lopercourse menyediakan layanan kursus terbaik di Indonesia dengan fitur terlengkap dan
+                        dukungan support 24 jam
+                        untuk kemudahan Anda meraih kesuksesan online!
+                    </div>
+
+                    <div class="flex gap-5 items-center p-6 rounded-b">
+                        <button onclick="downloadfront()"
+                            class="bg-dark text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            I accept
+                        </button>
+                        <button onclick="cancel()"
+                            class="bg-white border border-dark  rounded-lg text-sm font-medium px-5 py-2.5">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto">
+        <div id="popup3"
+            class="hidden overflow-x-hidden backdrop-blur-md bg-black/30 overflow-y-auto fixed md:h-full top-0 left-0 right-0 z-50 justify-center items-center">
+            <div class="relative w-full max-w-2xl px-4 h-screen md:mt-0 mt-[20vh] md:h-auto">
+                <div
+                    class="bg-white h-auto md:h-[500px] rounded-lg relative flex flex-col items-center py-10 justify-center">
+                    <div class="flex flex-col gap-6">
+                        <form action="" onsubmit="return false" class="flex flex-col gap-6">
+                            <label for="email" class="">
+                                <input type="email"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="name@eample.com" name="email" id="email">
+                                <p class="text-pink-600 font-bold text-sm" id="phone-alert3"></p>
+                            </label>
+                            <label for="number" class="">
+                                <input type="number"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex  w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="pin anda" name="number" id="number">
+                                <p class="text-pink-600 font-bold text-sm" id="pin-alert3"></p>
+                            </label>
+                        </form>
+
+                        <div class="flex gap-2 sm:gap-0 justify-between flex-col items-center sm:flex-row ">
+                            <div onclick="backend()" id="backend"
+                                class="bg-dark cursor-pointer transition duration-300 rounded-md w-[98px] h-[30px] flex items-center justify-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1024px-Logo_dana_blue.svg.png"
+                                    alt="" class="h-5">
+                            </div>
+                            <div class="flex gap-5">
+                                <h1 class="font-semibold">jumlah Tagihan:</h1>
+                                <p class="font-medium">187.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-semibold mt-9 px-14 text-center text-base">
+                        lopercourse menyediakan layanan kursus terbaik di Indonesia dengan fitur terlengkap dan
+                        dukungan support 24 jam
+                        untuk kemudahan Anda meraih kesuksesan online!
+                    </div>
+
+                    <div class="flex gap-5 items-center p-6 rounded-b">
+                        <button onclick="downloadandroid()"
+                            class="bg-dark text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            I accept
+                        </button>
+                        <button onclick="cancel()"
+                            class="bg-white border border-dark  rounded-lg text-sm font-medium px-5 py-2.5">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto">
+        <div id="popup4"
+            class="hidden overflow-x-hidden backdrop-blur-md bg-black/30 overflow-y-auto fixed md:h-full top-0 left-0 right-0 z-50 justify-center items-center">
+            <div class="relative w-full max-w-2xl px-4 h-screen md:mt-0 mt-[20vh] md:h-auto">
+                <div
+                    class="bg-white h-auto md:h-[500px] rounded-lg relative flex flex-col items-center py-10 justify-center">
+                    <div class="flex flex-col gap-6">
+                        <form action="" onsubmit="return false" class="flex flex-col gap-6">
+                            <label for="email" class="">
+                                <input type="email"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="name@eample.com" name="email" id="email">
+                                <p class="text-pink-600 font-bold text-sm" id="phone-alert4"></p>
+                            </label>
+                            <label for="number" class="">
+                                <input type="number"
+                                    class=" bg-gray-50 ring-2 ring-dark  focus:border-none  outline-none text-gray-900 sm:text-sm rounded-md flex  w-[30vh] sm:w-[50vh]  p-2.5"
+                                    placeholder="pin anda" name="number" id="number">
+                                <p class="text-pink-600 font-bold text-sm" id="pin-alert4"></p>
+                            </label>
+                        </form>
+
+                        <div class="flex gap-2 sm:gap-0 justify-between flex-col items-center sm:flex-row ">
+                            <div onclick="backend()" id="backend"
+                                class="bg-dark cursor-pointer transition duration-300 rounded-md w-[98px] h-[30px] flex items-center justify-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1024px-Logo_dana_blue.svg.png"
+                                    alt="" class="h-5">
+                            </div>
+                            <div class="flex gap-5">
+                                <h1 class="font-semibold">jumlah Tagihan:</h1>
+                                <p class="font-medium">231.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="font-semibold mt-9 px-14 text-center text-base">
+                        lopercourse menyediakan layanan kursus terbaik di Indonesia dengan fitur terlengkap dan
+                        dukungan support 24 jam
+                        untuk kemudahan Anda meraih kesuksesan online!
+                    </div>
+
+                    <div class="flex gap-5 items-center p-6 rounded-b">
+                        <button onclick="downloadmulti()"
+                            class="bg-dark text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            I accept
+                        </button>
+                        <button onclick="cancel()"
+                            class="bg-white border border-dark  rounded-lg text-sm font-medium px-5 py-2.5">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="./script.js"></script>

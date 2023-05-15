@@ -10,11 +10,32 @@ darkToggle.addEventListener("click", function () {
     localStorage.theme = "light";
   }
 });
-    
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark');
+
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
 } else {
-  document.documentElement.classList.remove('dark')
+  document.documentElement.classList.remove("dark");
+}
+
+function back() {
+  document.getElementById("popup").classList.add("flex");
+  document.getElementById("popup").classList.remove("hidden");
+}
+function back1() {
+  document.getElementById("popup2").classList.add("flex");
+  document.getElementById("popup2").classList.remove("hidden");
+}
+function back2() {
+  document.getElementById("popup3").classList.add("flex");
+  document.getElementById("popup3").classList.remove("hidden");
+}
+function back3() {
+  document.getElementById("popup4").classList.add("flex");
+  document.getElementById("popup4").classList.remove("hidden");
 }
 
 window.onscroll = function () {
@@ -92,6 +113,29 @@ function drop() {
     down.classList.remove("flex-col");
     down.classList.remove("justify-center");
     down.classList.add("hidden");
+    xstatus = true;
+  }
+  console.log(xstatus);
+}
+
+function cancel() {
+  document.getElementById("popup").classList.add("hidden");
+  document.getElementById("popup2").classList.add("hidden");
+  document.getElementById("popup3").classList.add("hidden");
+  document.getElementById("popup4").classList.add("hidden");
+}
+
+function backend() {
+  var backend = document.getElementById("backend");
+  if (xstatus == true) {
+    backend.classList.add("border-2");
+    backend.classList.add("border-dark");
+    backend.classList.remove("bg-dark");
+    xstatus = false;
+  } else {
+    backend.classList.remove("border-2");
+    backend.classList.remove("border-dark");
+    backend.classList.add("bg-dark");
     xstatus = true;
   }
   console.log(xstatus);
@@ -207,3 +251,127 @@ function gohome() {
   }
 }
 
+function validateNumber(value) {
+  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function downloadback() {
+  let valueEmail = document.getElementById("email").value;
+  let valuePassword = document.getElementById("number").value;
+
+  let alertEmail = document.getElementById("phone-alert");
+  let alertPassword = document.getElementById("pin-alert");
+
+  if (validateEmail(valueEmail)) {
+    if (valuePassword !== "") {
+      window.location.href = "../assets/app/backend.zip";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertEmail.innerHTML = "";
+    }
+  } else {
+    alertEmail.innerHTML = "masukan email anda";
+    if (valuePassword !== "") {
+      alertPassword.innerHTML = "";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+    }
+  }
+}
+
+function validateNumber(value) {
+  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function downloadfront() {
+  let valueEmail = document.getElementById("email").value;
+  let valuePassword = document.getElementById("number").value;
+
+  let alertEmail = document.getElementById("phone-alert2");
+  let alertPassword = document.getElementById("pin-alert2");
+
+  if (validateEmail(valueEmail)) {
+    if (valuePassword !== "") {
+      window.location.href = "../assets/app/frontend.zip";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertEmail.innerHTML = "";
+    }
+  } else {
+    alertEmail.innerHTML = "masukan email anda";
+    if (valuePassword !== "") {
+      alertPassword.innerHTML = "";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+    }
+  }
+}
+
+function validateNumber(value) {
+  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function downloadandroid() {
+  let valueEmail = document.getElementById("email").value;
+  let valuePassword = document.getElementById("number").value;
+
+  let alertEmail = document.getElementById("phone-alert3");
+  let alertPassword = document.getElementById("pin-alert3");
+
+  if (validateEmail(valueEmail)) {
+    if (valuePassword !== "") {
+      window.location.href = "../assets/app/android.zip";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertEmail.innerHTML = "";
+    }
+  } else {
+    alertEmail.innerHTML = "masukan email anda";
+    if (valuePassword !== "") {
+      alertPassword.innerHTML = "";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+    }
+  }
+}
+
+function validateNumber(value) {
+  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+function downloadmulti() {
+  let valueEmail = document.getElementById("email").value;
+  let valuePassword = document.getElementById("number").value;
+
+  let alertEmail = document.getElementById("phone-alert4");
+  let alertPassword = document.getElementById("pin-alert4");
+
+  if (validateEmail(valueEmail)) {
+    if (valuePassword !== "") {
+      window.location.href = "../assets/app/multi.zip";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertEmail.innerHTML = "";
+    }
+  } else {
+    alertEmail.innerHTML = "masukan email anda";
+    if (valuePassword !== "") {
+      alertPassword.innerHTML = "";
+    } else {
+      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+    }
+  }
+}
