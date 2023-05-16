@@ -51,11 +51,12 @@
                     <p class="text-pink-600 font-medium text-sm" id="password-alert"></p>
                 </div>
                 <div class="flex gap-3 left-0  justify-start w-full items-center">
-                    <input type="checkbox" name="checkbox" id="checkbox" required="" class="w-4 h-4 accent-dark text-white ">
+                    <input type="checkbox" name="checkbox" id="checkbox" required=""
+                        class="w-4 h-4 accent-dark text-white ">
                     <label for="" class="font-medium text-gray-900 ">I accept the <a class="font-semibold text-black"
                             href="#">Terms and Conditions</a></label>
                 </div>
-                <button type="submit"
+                <button id="signup" type="submit"
                     class="w-[50vh] h-14 bg-dark hover:bg hover:bg-white hover:ring-2 hover:ring-dark duration-150 transition focus:outline-none font-medium rounded-full text-lg px-5 py-2.5 text-center text-white hover:text hover:text-dark"
                     onclick="gomockup()">
                     Sign Up
@@ -69,6 +70,15 @@
 
 
         <script src="./script.js"></script>
+
+        <script>
+            const check = document.getElementById('checkbox')
+            const btnSignUp = document.getElementById('signup')
+            console.log(check.checked)
+            check.addEventListener('click', () => {
+                console.log(check.checked)
+            })
+        </script>
 </body>
 
 </html>
