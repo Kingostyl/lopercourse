@@ -2488,6 +2488,11 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
   }
