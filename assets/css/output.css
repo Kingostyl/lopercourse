@@ -1629,8 +1629,8 @@ video {
   accent-color: #f97316;
 }
 
-.accent-dark {
-  accent-color: #0f172a;
+.accent-green-600 {
+  accent-color: #16a34a;
 }
 
 .bg-blend-multiply {
@@ -1847,11 +1847,6 @@ video {
   border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 
-.hover\:border-dark:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
-}
-
 .hover\:bg-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -1897,9 +1892,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-dark:hover {
+.hover\:text-black:hover {
   --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -1980,9 +1975,14 @@ video {
   --tw-ring-color: rgb(249 115 22 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-dark:focus {
+.focus\:ring-purple-600:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(15 23 42 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(147 51 234 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-white:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
 
 .group:hover .group-hover\:h-full {
