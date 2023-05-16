@@ -16,6 +16,17 @@ darkToggle.addEventListener("click", function () {
   }
 });
 
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
+
 function back() {
   document.getElementById("popup").classList.add("flex");
   document.getElementById("popup").classList.remove("hidden");
@@ -37,7 +48,10 @@ function menu() {
   if (document.documentElement.scrollTop > 1) {
     document.getElementById("logo").classList.add("lg:text-dark");
     document.getElementById("nav-name").classList.add("dark:lg:text-white");
+    document.getElementById("nav-name").classList.add("dark:lg:bg-dark");
     document.getElementById("nav").classList.add("bg-white");
+    document.getElementById("o").classList.add("lg:dark:bg-dark");
+    document.getElementById("nav").classList.add("lg:dark:bg-dark");
     document.getElementById("nav").classList.add("dark:bg-dark");
     document.getElementById("o").classList.add("overflow-hidden");
     document.getElementById("nav").classList.add("fixed");
@@ -48,6 +62,11 @@ function menu() {
     document.getElementById("nav").classList.add("duration-300");
   } else {
     document.getElementById("nav").classList.remove("bg-white");
+    document.getElementById("o").classList.remove("lg:dark:bg-dark");
+    document.getElementById("nav").classList.remove("lg:dark:bg-dark");
+    document.getElementById("nav").classList.add("lg:dark:bg-slate-800");
+    document.getElementById("o").classList.add("lg:dark:bg-slate-800");
+    document.getElementById("nav-name").classList.remove("dark:lg:bg-dark");
     document.getElementById("logo").classList.remove("lg:text-black");
     document.getElementById("nav-name").classList.remove("text-black");
     document.getElementById("nav").classList.remove("w-full");
