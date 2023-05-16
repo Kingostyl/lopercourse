@@ -1,3 +1,8 @@
+window.onscroll = function () {
+  menu();
+};
+var xstatus = false;
+
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
 
@@ -27,11 +32,6 @@ function back3() {
   document.getElementById("popup4").classList.add("flex");
   document.getElementById("popup4").classList.remove("hidden");
 }
-
-window.onscroll = function () {
-  menu();
-};
-var xstatus = false;
 
 function menu() {
   if (document.documentElement.scrollTop > 1) {

@@ -26,7 +26,9 @@
                     <div class="flex items-center justify-between">
                         <div class="relative z-20 flex items-center gap-3">
                             <img src="../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
-                            <a href="./home.html" class="lg:text-dark  font-bold text-xl" id="logo">
+                            <a href="./home.html"
+                                class="lg:text-dark text-dark dark:text-white lg:dark:text-white font-bold text-xl"
+                                id="logo">
                                 Lopercourse
                             </a>
                         </div>
@@ -36,14 +38,16 @@
                             <label for="hamburger"
                                 class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden">
                                 <div aria-hidden="true"
-                                    class="m-auto h-0.5 w-6 rounded bg-orange-500 transition duration-300"></div>
+                                    class="m-auto h-0.5 w-6 rounded dark:bg-white bg-dark transition duration-300">
+                                </div>
                                 <div aria-hidden="false"
-                                    class="m-auto mt-2 h-0.5 w-6 rounded bg-orange-500 transition duration-300"></div>
+                                    class="m-auto mt-2 h-0.5 w-6 rounded dark:bg-white bg-dark transition duration-300">
+                                </div>
 
                             </label>
 
                             <div
-                                class="peer-checked:translate-x-0 bg-white lg:bg-white/0  inset-0 lg:dark:text-white lg:text-dark translate-x-[-100%]  fixed bg-transparent w-full shadow-xl transition duration-300  lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
+                                class="peer-checked:translate-x-0 bg-white dark:bg-dark lg:bg-white/0  inset-0 dark:lg:text-white text-dark dark:text-white lg:text-dark translate-x-[-100%]  fixed bg-transparent w-full shadow-xl transition duration-300  lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                                 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row" id="o">
                                     <ul id="nav-name"
                                         class="px-6 pt-20  space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
@@ -135,8 +139,6 @@
                                                 </li></a>
                                             </div>
                                         </div>
-
-
                                     </ul>
 
                                     <div
@@ -147,7 +149,7 @@
                                         <div class="z-50 hidden lg:peer-hover:flex  absolute md:mt-[42px] lg:hover:flex
                                             
                                             flex-col bg-white divide-y divide-gray-100 rounded-lg shadow w-36">
-                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                            <ul class="py-2 text-sm text-dark dark:text-dark">
                                                 <li>
                                                     <a href="./profile.html"
                                                         class="block px-4 py-2 hover:bg-gray-100 font-medium">My
@@ -156,7 +158,7 @@
                                             </ul>
                                             <div class="py-1">
                                                 <a href="./signin.html"
-                                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 font-medium">Sign
+                                                    class="block px-4 py-2 text-sm text-dark hover:bg-gray-100 font-medium">Sign
                                                     out</a>
                                             </div>
                                         </div>
@@ -203,6 +205,7 @@
                     alt="">
             </div>
         </div>
+    </div>
 
         <span id="daftar" class="px-10 mt-10 text-4xl font-bold text-center flex justify-center items-center">Daftar
             Harga
