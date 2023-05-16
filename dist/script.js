@@ -1,3 +1,32 @@
+window.onscroll = function () {
+  menu();
+};
+var xstatus = false;
+
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
+
 function back() {
   document.getElementById("popup").classList.add("flex");
   document.getElementById("popup").classList.remove("hidden");
@@ -15,18 +44,14 @@ function back3() {
   document.getElementById("popup4").classList.remove("hidden");
 }
 
-window.onscroll = function () {
-  menu();
-};
-var xstatus = false;
-
 function menu() {
   if (document.documentElement.scrollTop > 1) {
-    document.getElementById("nav-name").classList.add("text-black");
-    document.getElementById("logo").classList.add("lg:text-black");
+    document.getElementById("logo").classList.add("lg:text-dark");
     document.getElementById("nav-name").classList.add("dark:lg:text-white");
-    document.getElementById("logo").classList.remove("lg:text-white");
+    document.getElementById("nav-name").classList.add("dark:lg:bg-dark");
     document.getElementById("nav").classList.add("bg-white");
+    document.getElementById("o").classList.add("lg:dark:bg-dark");
+    document.getElementById("nav").classList.add("lg:dark:bg-dark");
     document.getElementById("nav").classList.add("dark:bg-dark");
     document.getElementById("o").classList.add("overflow-hidden");
     document.getElementById("nav").classList.add("fixed");
@@ -37,7 +62,11 @@ function menu() {
     document.getElementById("nav").classList.add("duration-300");
   } else {
     document.getElementById("nav").classList.remove("bg-white");
-    document.getElementById("logo").classList.add("lg:text-white");
+    document.getElementById("o").classList.remove("lg:dark:bg-dark");
+    document.getElementById("nav").classList.remove("lg:dark:bg-dark");
+    document.getElementById("nav").classList.add("lg:dark:bg-slate-800");
+    document.getElementById("o").classList.add("lg:dark:bg-slate-800");
+    document.getElementById("nav-name").classList.remove("dark:lg:bg-dark");
     document.getElementById("logo").classList.remove("lg:text-black");
     document.getElementById("nav-name").classList.remove("text-black");
     document.getElementById("nav").classList.remove("w-full");
