@@ -3,30 +3,6 @@ window.onscroll = function () {
 };
 var xstatus = false;
 
-const darkToggle = document.querySelector("#dark-toggle");
-const html = document.querySelector("html");
-
-darkToggle.addEventListener("click", function () {
-  if (darkToggle.checked) {
-    html.classList.add("dark");
-    localStorage.theme = "dark";
-  } else {
-    html.classList.remove("dark");
-    localStorage.theme = "light";
-  }
-});
-
-if (
-  localStorage.getItem("color-theme") === "dark" ||
-  (!("color-theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
-
-
 function back() {
   document.getElementById("popup").classList.add("flex");
   document.getElementById("popup").classList.remove("hidden");
@@ -184,6 +160,9 @@ function gomockup() {
   let alertUsername = document.getElementById("username-alert");
   let alertPassword = document.getElementById("password-alert");
 
+  if(check.checked) {
+
+
   if (valueUsername !== "") {
     alertUsername.innerHTML = "";
 
@@ -223,6 +202,8 @@ function gomockup() {
       }
     }
   }
+}
+
 }
 
 function validateEmail(value) {
@@ -380,4 +361,28 @@ function downloadmulti() {
       alertPassword.innerHTML = "Pin anda salah, coba lagi!";
     }
   }
+}
+
+
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
 }
