@@ -1,3 +1,16 @@
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
+  } else {
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
+});
+
 function back() {
   document.getElementById("popup").classList.add("flex");
   document.getElementById("popup").classList.remove("hidden");
@@ -22,10 +35,8 @@ var xstatus = false;
 
 function menu() {
   if (document.documentElement.scrollTop > 1) {
-    document.getElementById("nav-name").classList.add("text-black");
-    document.getElementById("logo").classList.add("lg:text-black");
+    document.getElementById("logo").classList.add("lg:text-dark");
     document.getElementById("nav-name").classList.add("dark:lg:text-white");
-    document.getElementById("logo").classList.remove("lg:text-white");
     document.getElementById("nav").classList.add("bg-white");
     document.getElementById("nav").classList.add("dark:bg-dark");
     document.getElementById("o").classList.add("overflow-hidden");
@@ -37,7 +48,6 @@ function menu() {
     document.getElementById("nav").classList.add("duration-300");
   } else {
     document.getElementById("nav").classList.remove("bg-white");
-    document.getElementById("logo").classList.add("lg:text-white");
     document.getElementById("logo").classList.remove("lg:text-black");
     document.getElementById("nav-name").classList.remove("text-black");
     document.getElementById("nav").classList.remove("w-full");
