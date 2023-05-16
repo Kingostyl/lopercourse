@@ -1625,6 +1625,10 @@ video {
   accent-color: #f97316;
 }
 
+.accent-dark {
+  accent-color: #0f172a;
+}
+
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
@@ -1889,6 +1893,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1965,6 +1974,11 @@ video {
 .focus\:ring-orange-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(249 115 22 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-dark:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(15 23 42 / var(--tw-ring-opacity));
 }
 
 .group:hover .group-hover\:h-full {

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../assets/css/output.css">
 </head>
 
-<body class="font-quicksand scroll-smooth">
+<body class="font-quicksand scroll-smooth dark:text-white dark:bg-dark bg-white text-dark">
     <div class="overflow-x-hidden dark:bg-dark bg-gray-50 md:h-full bg-cover w-full">
         <header id="nav">
             <div class="relative z-20">
@@ -174,7 +174,7 @@
             </div>
         </header>
 
-        <div class="bg-slate-50 h-screen w-full px-10 md:px-32 mt-32 lg:mt-0  flex-col md:flex items-center justify-center">
+        <div class="bg-slate-50 dark:bg-dark h-screen w-full px-10 md:px-32 mt-32 lg:mt-0  flex-col md:flex items-center justify-center">
             <div class="flex-col flex items-center md:items-start  justify-center md:gap-0 gap-9">
                 <div class="md:flex md:flex-row items-center md:gap-0 gap-3 flex-col">
                     <div>
@@ -188,12 +188,13 @@
                 </div>
 
                 <a href="#blog"
-                    class="flex justify-center items-center bg-dark w-32 h-9 text-white rounded-md font-semibold">Lihat
+                    class="flex justify-center items-center dark:bg-white dark:text-dark bg-dark w-32 h-9 text-white rounded-md font-semibold">Lihat
                     Blog</a>
             </div>
         </div>
+    </div>
 
-        <main class="my-32 md:px-20 px-10">
+        <main class="my-32 md:px-20 px-10 dark:bg-dark bg-white">
             <span class="font-bold text-3xl" id="blog">Lastest Blog</span>
             <div class="mt-20">
                 <div class="flex-wrap flex gap-10">
@@ -383,6 +384,24 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+        <input type="checkbox" class="hidden" id="dark-toggle" />
+        <label for="dark-toggle">
+            <div
+                class="flex cursor-pointer hover:text-slate-900 ease-in transition-all duration-300 dark:bg-dark bg-white border-dark border-4 dark:border-4 dark:border-white items-center justify-center fixed bottom-0 right-0  mb-3 w-12 h-12  text-white mr-2 z-50 rounded-full">
+                <i class="fa-solid fa-moon dark:hidden block text-dark"></i>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-6 h-6 dark:block hidden">
+                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-white"></path>
+                    <path
+                        d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                        class="stroke-white"></path>
+                </svg>
+            </div>
+        </label>
 
         <script src="./script.js"></script>
 </body>

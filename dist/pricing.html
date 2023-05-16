@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body class="font-quicksand scroll-smooth">
+<body class="font-quicksand scroll-smooth dark:bg-dark bg-white">
     <div class="overflow-x-hidden dark:bg-dark bg-gray-50 md:h-full bg-cover w-full">
         <header id="nav">
             <div class="relative z-20">
@@ -502,7 +502,19 @@
             </div>
         </footer>
 
-
+        <label for="dark-toggle">
+            <div
+                class="flex cursor-pointer hover:text-slate-900 ease-in transition-all duration-300 dark:bg-dark bg-white border-dark border-4 dark:border-4 dark:border-white items-center justify-center fixed bottom-0 right-0  mb-3 w-12 h-12  text-white mr-2 z-50 rounded-full">
+                <i class="fa-solid fa-moon dark:hidden block text-dark"></i>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-6 h-6 dark:block hidden">
+                    <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-white"></path>
+                    <path
+                        d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                        class="stroke-white"></path>
+                </svg>
+            </div>
+        </label>
 
         <div class="max-w-2xl mx-auto">
             <div id="popup"
