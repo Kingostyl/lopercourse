@@ -2324,6 +2324,10 @@ video {
     height: 100%;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-52 {
     width: 13rem;
   }
