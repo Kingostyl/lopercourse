@@ -278,8 +278,8 @@ function validateNumber(value) {
   }
 }
 function downloadfront() {
-  let valueEmail = document.getElementById("email").value;
-  let valuePassword = document.getElementById("number").value;
+  let valueEmail = document.getElementById("email2").value;
+  let valuePassword = document.getElementById("number2").value;
 
   let alertEmail = document.getElementById("phone-alert2");
   let alertPassword = document.getElementById("pin-alert2");
@@ -309,8 +309,8 @@ function validateNumber(value) {
   }
 }
 function downloadandroid() {
-  let valueEmail = document.getElementById("email").value;
-  let valuePassword = document.getElementById("number").value;
+  let valueEmail = document.getElementById("email3").value;
+  let valuePassword = document.getElementById("number3").value;
 
   let alertEmail = document.getElementById("phone-alert3");
   let alertPassword = document.getElementById("pin-alert3");
@@ -340,8 +340,8 @@ function validateNumber(value) {
   }
 }
 function downloadmulti() {
-  let valueEmail = document.getElementById("email").value;
-  let valuePassword = document.getElementById("number").value;
+  let valueEmail = document.getElementById("email4").value;
+  let valuePassword = document.getElementById("number4").value;
 
   let alertEmail = document.getElementById("phone-alert4");
   let alertPassword = document.getElementById("pin-alert4");
