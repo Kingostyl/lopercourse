@@ -49,7 +49,8 @@
 
                             <div
                                 class="peer-checked:translate-x-0 bg-white dark:bg-dark lg:bg-white/0 inset-0 dark:lg:text-white text-dark dark:text-white lg:text-dark translate-x-[-100%]  fixed bg-transparent w-full shadow-xl transition duration-300  lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
-                                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row lg:dark:bg-slate-800" id="o">
+                                <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row lg:dark:bg-slate-800"
+                                    id="o">
                                     <ul id="nav-name"
                                         class="px-6 pt-20  space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
                                         <div class="hidden lg:flex flex-col">
@@ -188,7 +189,7 @@
 
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="translate-y-32">
+                            <div class=" translate-y-0 md:translate-y-32">
                                 <img class="border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
                                     src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                                     alt="">
@@ -203,7 +204,7 @@
                         </div>
                         <div class=" grid gap-4" data-aos="fade-up" data-aos-duration="3000">
 
-                            <div class="  md:translate-y-32">
+                            <div class=" -translate-y-20 md:translate-y-32">
                                 <img class="border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
                                     src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                                     alt="">
@@ -223,8 +224,8 @@
             </div>
 
             <div
-                class="text-dark dark:text-white px-1 md:px-0 mt-52 flex flex-col items-center justify-center gap-10 py-8">
-                <p class="text-3xl font-semibold text-center px-0 lg:px-72">
+                class="text-dark dark:text-white px-1 md:px-0 mt-0 md:mt-52 flex flex-col items-center justify-center gap-10 py-8">
+                <p class="text-xl md:text-3xl font-semibold text-center px-2 lg:px-72">
                     lopercourse menyediakan layanan kursus IT untuk memulai dunia baru dan hal baru</p>
                 <button
                     class=" w-[200px] flex items-center justify-center py-3 text-white font-semibold rounded-3xl scroll-smooth dark:bg-white dark:text-dark bg-dark "><a
@@ -233,9 +234,9 @@
         </main>
 
     </div>
-    <main class="mt-32 bg-white px-10 md:px-32 dark:bg-dark">
-        <div>
-            <div class="w-full bg-dark  dark:bg-white rounded-lg h-[100px] flex gap-4 items-center px-6">
+    <main class="mt-32 bg-white px-3 md:px-32 dark:bg-dark">
+        <div class="justify-center flex flex-col items-center">
+            <div class="w-full md:w-[933px] bg-dark dark:bg-white rounded-lg h-[100px] flex gap-4 items-center px-6">
                 <img src="https://storage.googleapis.com/cms-storage-bucket/a40ceb6e5d342207de7b.png" alt=""
                     class="w-[50px] h-[54px]">
                 <div class="flex gap-3 items-center">
@@ -243,16 +244,18 @@
                     <i class="fa-solid fa-arrow-right w-10 h-10 text-white dark:text-dark flex items-center"></i>
                 </div>
             </div>
+        </div>
 
 
             <div class="flex mt-16 items-center justify-center">
-                <span class="text-center font-semibold lg:w-[55%] text-3xl dark:text-white">lakukan apa yang orang lain
+                <span class="text-center font-semibold lg:w-[55%] text-xl md:text-3xl dark:text-white">lakukan apa yang
+                    orang lain
                     tidak bisa lakukan dan raih mimpi besar mu</span>
             </div>
 
             <div class="flex justify-center">
                 <div
-                    class="lg:w-2/6 mt-32 h-9 gap-10 items-center justify-between px-2 flex rounded-2xl dark:bg-slate-800 bg-gray-50">
+                    class="lg:w-2/6 w-full mt-32 h-9 gap-3 md:gap-10 items-center justify-between px-2 flex rounded-2xl dark:bg-slate-800 bg-gray-50">
                     <span
                         class="font-semibold text-dark dark:text-white text-lg cursor-pointer hover:bg-dark hover:text-white rounded-2xl px-4 transition duration-300"
                         onclick="cepat()">Cepat</span>
@@ -335,7 +338,7 @@
             </div>
             <div class="my-32  px-1 md:px-32">
                 <div
-                    class="flex flex-wrap lg:flex-nowrap bg-gradient-to-r px-5 from-red-400 to-yellow-50 w-full lg:h-[350px] rounded-xl">
+                    class="flex flex-wrap lg:flex-nowrap bg-gradient-to-r px-5 from-red-400 to-yellow-50 w-full md:w-[933px] lg:h-[350px] rounded-xl">
                     <div class="flex flex-col gap-3 pt-3 md:pt-0 items-center lg:items-start justify-center">
                         <span class="text-3xl font-semibold ">Developer berkata</span>
                         <span class="text-xl font-medium md:w-[80%] text-center lg:text-start">anda memberi kami membagi
@@ -382,7 +385,7 @@
 
     </main>
 
-    <main id="roadmap"
+    <!-- <main id="roadmap"
         class="mt-20 overflow-x-auto w-screen scroll-smooth overflow-visible px-10 h-[60vh] lg:h-auto py-10 lg:px-4 dark:bg-slate-800 bg-[#f8f9fa] flex gap-8 ">
         <div
             class="bg-white dark:bg-dark dark:text-white item relative items-center justify-start overflow-hidden  hover:bg-white group transition cursor-pointer shadow-xl drop-shadow-xl duration-300 md:h-[450px] w-[500px] flex-col gap-5 rounded-2xl flex">
@@ -448,7 +451,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
 
     <footer class="bg-white dark:bg-dark">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
