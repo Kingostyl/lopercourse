@@ -78,6 +78,68 @@
             check.addEventListener('click', () => {
                 console.log(check.checked)
             })
+
+            function validateEmail(value) {
+  if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function gomockup() {
+  let valueEmail = document.getElementById("email").value;
+  let valueUsername = document.getElementById("text").value;
+  let valuePassword = document.getElementById("password").value;
+
+  let alertEmail = document.getElementById("email-alert");
+  let alertUsername = document.getElementById("username-alert");
+  let alertPassword = document.getElementById("password-alert");
+
+  if(check.checked) {
+
+
+  if (valueUsername !== "") {
+    alertUsername.innerHTML = "";
+
+    if (validateEmail(valueEmail)) {
+      alertEmail.innerHTML = "";
+
+      if (valuePassword !== "") {
+        alertPassword.innerHTML = "";
+        window.location.href = "./home.html";
+      } else {
+        alertPassword.innerHTML = "enter your password!";
+      }
+    } else {
+      alertEmail.innerHTML = "enter your email correctly!";
+
+      if (valuePassword !== "") {
+        alertPassword.innerHTML = "";
+      } else {
+        alertPassword.innerHTML = "enter your password!";
+      }
+    }
+  } else {
+    alertUsername.innerHTML = "Masukan nama mu!";
+    if (validateEmail(valueEmail)) {
+      alertEmail.innerHTML = "";
+      if (valuePassword !== "") {
+        alertPassword.innerHTML = "";
+      } else {
+        alertPassword.innerHTML = "Masukan password mu!";
+      }
+    } else {
+      alertEmail.innerHTML = "Masukan email mu!";
+      if (valuePassword !== "") {
+        alertPassword.innerHTML = "";
+      } else {
+        alertPassword.innerHTML = "Masukan password mu!";
+      }
+    }
+  }
+}
+}
         </script>
 </body>
 
