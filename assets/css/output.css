@@ -746,6 +746,10 @@ video {
   margin-top: 90%;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
 .block {
   display: block;
 }
@@ -1514,6 +1518,11 @@ video {
   padding-bottom: 5.5rem;
 }
 
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -2181,8 +2190,16 @@ video {
     margin-top: 20%;
   }
 
+  .md\:mt-\[2rem\] {
+    margin-top: 2rem;
+  }
+
   .md\:mt-\[42px\] {
     margin-top: 42px;
+  }
+
+  .md\:mt-\[3rem\] {
+    margin-top: 3rem;
   }
 
   .md\:flex {
@@ -2371,8 +2388,17 @@ video {
     padding-bottom: 4rem;
   }
 
+  .md\:py-\[3rem\] {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pt-\[3rem\] {
+    padding-top: 3rem;
   }
 
   .md\:text-start {
