@@ -767,6 +767,14 @@ video {
   margin-top: 0px;
 }
 
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1001,6 +1009,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .max-w-2xl {
@@ -2425,6 +2441,10 @@ video {
     width: 9px;
   }
 
+  .md\:w-\[950px\] {
+    width: 950px;
+  }
+
   .md\:translate-y-32 {
     --tw-translate-y: 8rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2596,6 +2616,10 @@ video {
     position: absolute;
   }
 
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:float-right {
     float: right;
   }
@@ -2632,6 +2656,82 @@ video {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .lg\:mr-32 {
+    margin-right: 8rem;
+  }
+
+  .lg\:mr-72 {
+    margin-right: 18rem;
+  }
+
+  .lg\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .lg\:mr-36 {
+    margin-right: 9rem;
+  }
+
+  .lg\:mr-44 {
+    margin-right: 11rem;
+  }
+
+  .lg\:mr-52 {
+    margin-right: 13rem;
+  }
+
+  .lg\:mr-56 {
+    margin-right: 14rem;
+  }
+
+  .lg\:mr-\[3rem\] {
+    margin-right: 3rem;
+  }
+
+  .lg\:mr-\[90rem\] {
+    margin-right: 90rem;
+  }
+
+  .lg\:mr-\[rem\] {
+    margin-right: rem;
+  }
+
+  .lg\:mr-\[20rem\] {
+    margin-right: 20rem;
+  }
+
+  .lg\:mr-\[17rem\] {
+    margin-right: 17rem;
+  }
+
+  .lg\:mr-\[15rem\] {
+    margin-right: 15rem;
+  }
+
+  .lg\:mr-\[14rem\] {
+    margin-right: 14rem;
+  }
+
+  .lg\:-mr-1 {
+    margin-right: -0.25rem;
+  }
+
+  .lg\:-mr-4 {
+    margin-right: -1rem;
   }
 
   .lg\:flex {
@@ -2858,8 +2958,16 @@ video {
     display: flex;
   }
 
+  .lg\:hover\:items-center:hover {
+    align-items: center;
+  }
+
   .peer:hover ~ .lg\:peer-hover\:flex {
     display: flex;
+  }
+
+  .peer:hover ~ .lg\:peer-hover\:justify-center {
+    justify-content: center;
   }
 
   :is(.dark .dark\:lg\:bg-dark) {
