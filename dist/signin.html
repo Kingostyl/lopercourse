@@ -60,40 +60,42 @@
         </form>
     </div>
 
-    <script src="../dist/script.js"></script>
-
     <script>
         function validateEmail(value) {
-  if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+            if (/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
 
-function gohome() {
-  let valueEmail = document.getElementById("email").value;
-  let valuePassword = document.getElementById("password").value;
+        function gohome() {
+            let valueEmail = document.getElementById("email").value;
+            let valuePassword = document.getElementById("password").value;
 
-  let alertEmail = document.getElementById("email-alert");
-  let alertPassword = document.getElementById("password-alert");
+            let alertEmail = document.getElementById("email-alert");
+            let alertPassword = document.getElementById("password-alert");
 
-  if (validateEmail(valueEmail)) {
-    if (valuePassword !== "") {
-      window.location.href = "./home.html";
-    } else {
-      alertPassword.innerHTML = "password is wrong, please try again!";
-      alertEmail.innerHTML = "";
-    }
-  } else {
-    alertEmail.innerHTML = "enter your email correctly!";
-    if (valuePassword !== "") {
-      alertPassword.innerHTML = "";
-    } else {
-      alertPassword.innerHTML = "password is wrong, please try again!";
-    }
-  }
-}
+            if (validateEmail(valueEmail)) {
+                if (valuePassword !== "") {
+                    window.location.href = "./home.html";
+                } else {
+                    alertPassword.innerHTML = "password is wrong, please try again!";
+                    alertEmail.innerHTML = "";
+                }
+            } else {
+                alertEmail.innerHTML = "enter your email correctly!";
+                if (valuePassword !== "") {
+                    alertPassword.innerHTML = "";
+                } else {
+                    alertPassword.innerHTML = "password is wrong, please try again!";
+                }
+            }
+        }
+
+        function gosignup() {
+            window.location.href = "/dist/signup.html";
+        }
     </script>
 </body>
 
