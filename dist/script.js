@@ -1,8 +1,3 @@
-window.onscroll = function () {
-  menu();
-};
-var xstatus = false;
-
 function back() {
   document.getElementById("popup").classList.add("flex");
   document.getElementById("popup").classList.remove("hidden");
@@ -20,16 +15,17 @@ function back3() {
   document.getElementById("popup4").classList.remove("hidden");
 }
 
+window.onscroll = function () {
+  menu();
+};
+var xstatus = false;
 function menu() {
   if (document.documentElement.scrollTop > 1) {
     document.getElementById("logo").classList.add("lg:text-dark");
-    document.getElementById("nav-name").classList.add("dark:lg:text-white");
-    document.getElementById("nav-name").classList.add("dark:lg:bg-dark");
     document.getElementById("nav").classList.add("bg-white");
-    document.getElementById("o").classList.add("lg:dark:bg-dark");
-    document.getElementById("nav").classList.add("lg:dark:bg-dark");
     document.getElementById("nav").classList.add("dark:bg-dark");
-    document.getElementById("o").classList.add("overflow-hidden");
+    document.getElementById("o").classList.add("dark:lg:bg-dark");
+    document.getElementById("o").classList.remove("lg:dark:bg-slate-800");
     document.getElementById("nav").classList.add("fixed");
     document.getElementById("nav").classList.add("w-full");
     document.getElementById("nav").classList.add("z-50");
@@ -38,11 +34,8 @@ function menu() {
     document.getElementById("nav").classList.add("duration-300");
   } else {
     document.getElementById("nav").classList.remove("bg-white");
-    document.getElementById("o").classList.remove("lg:dark:bg-dark");
-    document.getElementById("nav").classList.remove("lg:dark:bg-dark");
-    document.getElementById("nav").classList.add("lg:dark:bg-slate-800");
+    document.getElementById("nav").classList.remove("dark:bg-dark");
     document.getElementById("o").classList.add("lg:dark:bg-slate-800");
-    document.getElementById("nav-name").classList.remove("dark:lg:bg-dark");
     document.getElementById("logo").classList.remove("lg:text-black");
     document.getElementById("nav-name").classList.remove("text-black");
     document.getElementById("nav").classList.remove("w-full");
@@ -152,25 +145,17 @@ function validateNumber(value) {
 }
 
 function downloadback() {
-  let valueEmail = document.getElementById("email").value;
   let valuePassword = document.getElementById("number").value;
-
-  let alertEmail = document.getElementById("phone-alert");
   let alertPassword = document.getElementById("pin-alert");
 
-  if (validateEmail(valueEmail)) {
-    if (valuePassword !== "") {
+  console.log(valuePassword)
+  if (valuePassword != '') {
       window.location.href = "../assets/app/backend.zip";
-    } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
-      alertEmail.innerHTML = "";
-    }
   } else {
-    alertEmail.innerHTML = "masukan email anda";
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
     } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertPassword.innerHTML = "Isi terlebih dahulu!";
     }
   }
 }
@@ -182,26 +167,19 @@ function validateNumber(value) {
     return false;
   }
 }
-function downloadfront() {
-  let valueEmail = document.getElementById("email2").value;
-  let valuePassword = document.getElementById("number2").value;
 
-  let alertEmail = document.getElementById("phone-alert2");
+function downloadfront() {
+  let valuePassword = document.getElementById("number2").value;
   let alertPassword = document.getElementById("pin-alert2");
 
-  if (validateEmail(valueEmail)) {
-    if (valuePassword !== "") {
-      window.location.href = "../assets/app/frontend.zip";
-    } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
-      alertEmail.innerHTML = "";
-    }
+  console.log(valuePassword)
+  if (valuePassword != '') {
+      window.location.href = "../assets/app/front.zip";
   } else {
-    alertEmail.innerHTML = "masukan email anda";
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
     } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertPassword.innerHTML = "Isi terlebih dahulu!";
     }
   }
 }
@@ -213,26 +191,19 @@ function validateNumber(value) {
     return false;
   }
 }
-function downloadandroid() {
-  let valueEmail = document.getElementById("email3").value;
-  let valuePassword = document.getElementById("number3").value;
 
-  let alertEmail = document.getElementById("phone-alert3");
+function downloadandroid() {
+  let valuePassword = document.getElementById("number3").value;
   let alertPassword = document.getElementById("pin-alert3");
 
-  if (validateEmail(valueEmail)) {
-    if (valuePassword !== "") {
+  console.log(valuePassword)
+  if (valuePassword != '') {
       window.location.href = "../assets/app/android.zip";
-    } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
-      alertEmail.innerHTML = "";
-    }
   } else {
-    alertEmail.innerHTML = "masukan email anda";
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
     } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertPassword.innerHTML = "Isi terlebih dahulu!";
     }
   }
 }
@@ -244,29 +215,23 @@ function validateNumber(value) {
     return false;
   }
 }
-function downloadmulti() {
-  let valueEmail = document.getElementById("email4").value;
-  let valuePassword = document.getElementById("number4").value;
 
-  let alertEmail = document.getElementById("phone-alert4");
+function downloadmulti() {
+  let valuePassword = document.getElementById("number4").value;
   let alertPassword = document.getElementById("pin-alert4");
 
-  if (validateEmail(valueEmail)) {
-    if (valuePassword !== "") {
+  console.log(valuePassword)
+  if (valuePassword != '') {
       window.location.href = "../assets/app/multi.zip";
-    } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
-      alertEmail.innerHTML = "";
-    }
   } else {
-    alertEmail.innerHTML = "masukan email anda";
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
     } else {
-      alertPassword.innerHTML = "Pin anda salah, coba lagi!";
+      alertPassword.innerHTML = "Isi terlebih dahulu!";
     }
   }
 }
+
 
 
 const darkToggle = document.querySelector("#dark-toggle");
