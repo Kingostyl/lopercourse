@@ -101,8 +101,10 @@
                             if (valuePassword !== "") {
                                 alertPassword.innerHTML = "";
                                 window.location.href = "./home.html";
+                                document.getElementById("password").classList.add("border-green-600")
                             } else {
                                 alertPassword.innerHTML = "enter your password!";
+                                document.getElementById("email").classList.add("border-green-600")
                             }
                         } else {
                             alertEmail.innerHTML = "enter your email correctly!";
@@ -111,6 +113,9 @@
                                 alertPassword.innerHTML = "";
                             } else {
                                 alertPassword.innerHTML = "enter your password!";
+                                document.getElementById("password").classList.add("border-pink-600")
+                                document.getElementById("email").classList.add("border-pink-600")
+                                document.getElementById("text").classList.add("border-green-600")
                             }
                         }
                     } else {
@@ -128,6 +133,12 @@
                                 alertPassword.innerHTML = "";
                             } else {
                                 alertPassword.innerHTML = "Masukan password mu!";
+                                document.getElementById("password").classList.add("border-pink-600")
+                                document.getElementById("email").classList.add("border-pink-600")
+                                document.getElementById("text").classList.add("border-pink-600")
+                                document.getElementById("text").classList.remove("border-green-600")
+                                document.getElementById("email").classList.remove("border-green-600")
+                                document.getElementById("password").classList.remove("border-green-600")
                             }
                         }
                     }
