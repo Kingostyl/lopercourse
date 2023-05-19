@@ -534,18 +534,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .fixed {
   position: fixed;
 }
@@ -630,6 +618,11 @@ video {
   margin-right: auto;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -653,16 +646,6 @@ video {
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
 .-mr-6 {
@@ -1013,6 +996,10 @@ video {
   width: 60%;
 }
 
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .w-auto {
   width: auto;
 }
@@ -1025,24 +1012,12 @@ video {
   width: 100vw;
 }
 
-.w-\[30\] {
-  width: 30;
+.w-\[90\%\] {
+  width: 90%;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[20\%\] {
-  width: 20%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .max-w-2xl {
@@ -1138,14 +1113,6 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
 .gap-1 {
   gap: 0.25rem;
 }
@@ -1156,6 +1123,10 @@ video {
 
 .gap-14 {
   gap: 3.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
@@ -1194,10 +1165,6 @@ video {
   gap: 2.25rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1208,12 +1175,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]) {
@@ -1422,16 +1383,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'https\:\/\/images\.prismic\.io\/proton-me\/ae452ca9-e7bd-44a8-93ef-f80a493ae8ce_the-proton-team\.png\?ixlib\=gatsbyFP\&auto\=compress\%2Cformat\&fit\=max\&max-width\=960\&w\=960\&h\=932\'\)\] {
   background-image: url('https://images.prismic.io/proton-me/ae452ca9-e7bd-44a8-93ef-f80a493ae8ce_the-proton-team.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&max-width=960&w=960&h=932');
 }
@@ -1620,11 +1571,6 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
 }
 
 .pb-4 {
@@ -2173,14 +2119,14 @@ video {
   border-width: 4px;
 }
 
-:is(.dark .dark\:border-white) {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 :is(.dark .dark\:border-gray-700) {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:border-white) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:bg-dark) {
@@ -2218,14 +2164,14 @@ video {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-white) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 :is(.dark .dark\:text-gray-400) {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:text-white:hover) {
@@ -2322,6 +2268,10 @@ video {
 
   .md\:mt-\[42px\] {
     margin-top: 42px;
+  }
+
+  .md\:mt-28 {
+    margin-top: 7rem;
   }
 
   .md\:block {
@@ -2639,11 +2589,6 @@ video {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-
-  .lg\:my-1 {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
   }
 
   .lg\:-mr-9 {
