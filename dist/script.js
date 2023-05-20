@@ -246,3 +246,4 @@ darkToggle.addEventListener("click", function () {
     localStorage.theme = "light";
   }
 });
+
