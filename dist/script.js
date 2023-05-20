@@ -73,6 +73,10 @@ function gosignup() {
   window.location.href = "/dist/signup.html";
 }
 
+function goBuy(){
+  window.location.href = "/dist/pricing.html"
+}
+
 function drop() {
   var down = document.getElementById("down");
   if (xstatus == true) {
