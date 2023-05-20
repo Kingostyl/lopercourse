@@ -972,6 +972,14 @@ video {
   width: 100vw;
 }
 
+.w-\[40vh\] {
+  width: 40vh;
+}
+
+.w-\[45vh\] {
+  width: 45vh;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2324,6 +2332,10 @@ video {
   .md\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .md\:w-\[50vh\] {
+    width: 50vh;
   }
 
   .md\:translate-y-32 {

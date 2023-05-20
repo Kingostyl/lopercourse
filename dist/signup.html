@@ -33,24 +33,24 @@
                 <div>
                     <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
                     <input type="text" name="text" id="text"
-                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none  outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[50vh] h-14 p-2.5"
+                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none  outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5"
                         placeholder="Enter Your Name" />
                     <p class="text-pink-600 font-medium text-sm" id="username-alert"></p>
                 </div>
                 <div>
                     <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Email</label>
                     <input type="email" name="email" id="email"
-                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none  outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[50vh] h-14 p-2.5"
+                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none  outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5"
                         placeholder="Enter Your Email" />
                     <p class="text-pink-600 font-medium text-sm" id="email-alert"></p>
                 </div>
                 <div>
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
                     <input type="password" name="password" id="password" placeholder="Enter Your Password"
-                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[50vh] h-14 p-2.5" />
+                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5" />
                     <p class="text-pink-600 font-medium text-sm" id="password-alert"></p>
                 </div>
-                <div class="flex gap-3 left-0  justify-start w-full items-center">
+                <div class="flex gap-3 left-0 px-3 justify-start w-full items-center">
                     <input type="checkbox" name="checkbox" id="checkbox" required=""
                         class="w-4 h-4 accent-dark text-white ">
                     <label for="" class="font-medium text-gray-900 ">I accept the <a class="font-semibold text-black"
@@ -102,9 +102,11 @@
                                 alertPassword.innerHTML = "";
                                 window.location.href = "./home.html";
                                 document.getElementById("password").classList.add("border-green-600")
+                                document.getElementById("password").classList.remove("border-pink-600")
                             } else {
                                 alertPassword.innerHTML = "enter your password!";
                                 document.getElementById("email").classList.add("border-green-600")
+                                document.getElementById("email").classList.remove("border-pink-600")
                             }
                         } else {
                             alertEmail.innerHTML = "enter your email correctly!";
@@ -116,6 +118,7 @@
                                 document.getElementById("password").classList.add("border-pink-600")
                                 document.getElementById("email").classList.add("border-pink-600")
                                 document.getElementById("text").classList.add("border-green-600")
+                                document.getElementById("text").classList.remove("border-pink-600")
                             }
                         }
                     } else {
