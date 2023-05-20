@@ -15,6 +15,11 @@ function back3() {
   document.getElementById("popup4").classList.remove("hidden");
 }
 
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
 window.onscroll = function () {
   menu();
 };

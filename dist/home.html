@@ -16,9 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/output.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body class="bdy font-quicksand overflow-x-hidden scroll-smooth dark:bg-dark">
+    <div id="preloader" class="bg-white dark:bg-dark h-screen w-full text-center fixed z-50">
+        <div class="loader">
+            <div class="loader-inner-1"></div>
+            <div class="loader-inner-2"></div>
+            <div class="loader-inner-3"></div>
+            <div class="loader-inner-4"></div>
+        </div>
+    </div>
     <div class="overflow-x-hidden dark:bg-slate-800 bg-gray-50 md:h-full bg-cover w-full">
         <header id="nav">
             <div class="relative z-20">
@@ -180,10 +189,10 @@
 
         <main class="mt-20">
             <div>
-                <div id="text"
+                <h1 id="text"
                     class="text-3xl md:text-6xl font-medium dark:text-white text-dark flex items-center text-center px-1 md:px-32 justify-center">
-                    Bangun Karirmu Sebagai Developer Profesional
-                </div>
+                    
+                </h1>
 
                 <div class="mt-32 grid items-center justify-center px-10 md:px-3">
 
@@ -314,7 +323,9 @@
                 <span class="flex flex-col gap-5">
                     <h3 class="font-bold  text-center lg:text-start text-3xl dark:text-white">Google bersama Kami
                     </h3>
-                    <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start dark:text-white">Google telah bergabung degan kami selama 1 tahun kurang untuk memudahkan kalian berinteraksi dengan google devloper</p>
+                    <p class="font-medium text-xl lg:w-[90%] text-center lg:text-start dark:text-white">Google telah
+                        bergabung degan kami selama 1 tahun kurang untuk memudahkan kalian berinteraksi dengan google
+                        devloper</p>
                 </span>
             </div>
             <div class="star flex lg:flex-nowrap flex-wrap md:mt-0 mt-6 gap-14 justify-center items-center">
@@ -381,7 +392,7 @@
 
     </main>
 
-    
+
     <!-- <main id="roadmap"
         class="mt-20 overflow-x-auto w-screen scroll-smooth overflow-visible px-10 h-[60vh] lg:h-auto py-10 lg:px-4 dark:bg-slate-800 bg-[#f8f9fa] flex gap-8 ">
         <div
@@ -451,8 +462,8 @@
     </main> -->
 
     <div class="md:px-32">
-    <hr class="my-6 border-gray-200 sm:mx-auto  dark:border-gray-700 lg:my-8" />
-</div>
+        <hr class="my-6 border-gray-200 sm:mx-auto  dark:border-gray-700 lg:my-8" />
+    </div>
     <footer class="bg-white h-auto w-full my-2 md:px-32 px-4 dark:text-white dark:bg-dark">
         <div class="flex gap-32 justify-center flex-wrap">
             <div class="flex flex-col gap-7">
@@ -516,7 +527,8 @@
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">lopercourse™</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#"
+                class="hover:underline">lopercourse™</a>. All Rights Reserved.</span>
     </footer>
 
     <input type="checkbox" class="hidden" id="dark-toggle" />
@@ -535,11 +547,20 @@
     </label>
 
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var typed = new Typed('#text', {
+            strings: ['Bangun Karirmu Sebagai Developer Profesional'],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        });
     </script>
 </body>
 
