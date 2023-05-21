@@ -15,11 +15,6 @@ function back3() {
   document.getElementById("popup4").classList.remove("hidden");
 }
 
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
-
 window.onscroll = function () {
   menu();
 };
@@ -255,13 +250,3 @@ darkToggle.addEventListener("click", function () {
     localStorage.theme = "light";
   }
 });
-
-if (
-  localStorage.getItem("color-theme") === "dark" ||
-  (!("color-theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
