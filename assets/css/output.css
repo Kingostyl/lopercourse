@@ -610,6 +610,11 @@ video {
   margin-right: auto;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -645,24 +650,6 @@ video {
   margin-bottom: 2rem;
 }
 
-<<<<<<< HEAD
-=======
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
-.my-16 {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
->>>>>>> 84dd38e0a61c2b3493b5d1ff4c8f8bb0beb3238f
 .-mr-6 {
   margin-right: -1.5rem;
 }
@@ -899,19 +886,6 @@ video {
   height: 100vh;
 }
 
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -996,6 +970,10 @@ video {
   width: 400px;
 }
 
+.w-\[40vh\] {
+  width: 40vh;
+}
+
 .w-\[42px\] {
   width: 42px;
 }
@@ -1034,14 +1012,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[40\] {
-  width: 40;
-}
-
-.w-\[40vh\] {
-  width: 40vh;
 }
 
 .min-w-full {
@@ -1420,16 +1390,16 @@ video {
   background-image: url('https://i0.wp.com/9to5mac.com/wp-content/uploads/sites/6/2022/06/apple-park-wwdc-2022-keynote-9to5mac.jpg?w=1500&quality=82&strip=all&ssl=1');
 }
 
+.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1547185942-2b5661136b1b\?ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\&auto\=format\&fit\=crop\&w\=1742\&q\=80\'\)\] {
+  background-image: url('https://images.unsplash.com/photo-1547185942-2b5661136b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80');
+}
+
 .bg-\[url\(\'https\:\/\/wallpapershome\.com\/images\/pages\/pic_h\/24640\.jpg\'\)\] {
   background-image: url('https://wallpapershome.com/images/pages/pic_h/24640.jpg');
 }
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-welcome {
-  background-image: url('/assets/img/welcome.jpg');
 }
 
 .from-red-400 {
@@ -1442,16 +1412,16 @@ video {
   --tw-gradient-to: #fefce8 var(--tw-gradient-to-position);
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
 .bg-cover {
   background-size: cover;
 }
 
 .bg-center {
   background-position: center;
-}
-
-.bg-repeat {
-  background-repeat: repeat;
 }
 
 .bg-no-repeat {
@@ -1601,16 +1571,6 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.px-44 {
-  padding-left: 11rem;
-  padding-right: 11rem;
-}
-
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1619,16 +1579,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
 }
 
 .text-center {
@@ -2254,10 +2214,6 @@ video {
     height: 300px;
   }
 
-  .sm\:h-screen {
-    height: 100vh;
-  }
-
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2272,11 +2228,6 @@ video {
 
   .sm\:gap-6 {
     gap: 1.5rem;
-  }
-
-  .sm\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .sm\:text-center {
@@ -2363,8 +2314,8 @@ video {
     height: 450px;
   }
 
-  .md\:h-\[570px\] {
-    height: 570px;
+  .md\:h-\[500px\] {
+    height: 500px;
   }
 
   .md\:h-auto {
@@ -2415,8 +2366,8 @@ video {
     width: 70%;
   }
 
-  .md\:w-\[72\%\] {
-    width: 72%;
+  .md\:w-\[75\%\] {
+    width: 75%;
   }
 
   .md\:w-\[80\%\] {
@@ -2446,30 +2397,6 @@ video {
   .md\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .md\:w-auto {
-    width: auto;
-  }
-
-  .md\:w-\[\] {
-    width: ;
-  }
-
-  .md\:w-\[50\] {
-    width: 50;
-  }
-
-  .md\:w-\[0\%\] {
-    width: 0%;
-  }
-
-  .md\:w-\[\%\] {
-    width: %;
-  }
-
-  .md\:w-\[75\%\] {
-    width: 75%;
   }
 
   .md\:translate-y-32 {
@@ -2739,8 +2666,8 @@ video {
     width: 55%;
   }
 
-  .lg\:w-\[60\%\] {
-    width: 60%;
+  .lg\:w-\[72\%\] {
+    width: 72%;
   }
 
   .lg\:w-\[90\%\] {
@@ -2749,10 +2676,6 @@ video {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-\[60\%\] {
-    width: 60%;
   }
 
   .lg\:translate-x-0 {
@@ -2814,6 +2737,11 @@ video {
     padding-right: 1rem;
   }
 
+  .lg\:px-44 {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -2847,11 +2775,6 @@ video {
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:px-44 {
-    padding-left: 11rem;
-    padding-right: 11rem;
   }
 
   .lg\:pl-0 {
