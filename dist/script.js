@@ -17,6 +17,7 @@ function back3() {
 
 window.onscroll = function () {
   menu();
+  dnav();
 };
 var xstatus = false;
 function menu() {
@@ -44,6 +45,17 @@ function menu() {
     document.getElementById("nav").classList.remove("shadow-lg");
   }
 }
+
+function dnav() {
+  if (document.documentElement.scrollTop > 1) {
+    document.getElementById("down").classList.add("hidden");
+    document.getElementById("down").classList.add("transitiion");
+    document.getElementById("down").classList.add("duration-300");
+  } else {
+    document.getElementById("down").classList.add("flex");
+  }
+}
+
 function simple() {
   document.getElementById("smp").classList.add("flex");
   document.getElementById("smp").classList.remove("hidden");

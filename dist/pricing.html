@@ -51,7 +51,24 @@
                                 class="peer-checked:translate-x-0 bg-white dark:bg-dark dark:lg:bg-slate-800 lg:bg-white/0 inset-0 dark:lg:text-white text-dark dark:text-white lg:text-dark translate-x-[-100%]  fixed bg-transparent w-full shadow-xl transition duration-300  lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                                 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row" id="o">
                                     <ul id="nav-name"
-                                        class="px-6 pt-20  space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
+                                        class="px-6 pt-20  items-center space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
+                                        <div class="mb-3">
+                                            <label for="simple-search" class="sr-only">Search</label>
+                                            <div class="relative w-full flex items-center">
+                                                <div class="absolute  left-0 flex items-center px-2">
+                                                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500"
+                                                        fill="currentColor" viewBox="0 0 20 20"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd"
+                                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </div>
+                                                <input type="text" id="simple-search"
+                                                    class="border  block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
+                                                    placeholder="Apa yang ingin anda pelajari?" required>
+                                            </div>
+                                        </div>
                                         <div class="hidden lg:flex flex-col">
                                             <li
                                                 class="lg:h-9 group  peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
@@ -99,11 +116,9 @@
                                                 </li></a>
                                             </div>
                                         </div>
-                                        <li>
-                                            <a href="./pricing.html"
-                                                class="group font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                                                <span class="relative ">Price</span>
-                                            </a>
+                                        <li
+                                            class="lg:h-9 group peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
+                                            <a href="./pricing.html" class="relative">Pricing</a>
                                         </li>
                                         <div class="hidden lg:flex flex-col">
                                             <li
@@ -143,9 +158,14 @@
                                     </ul>
 
                                     <div
-                                        class="py-8 before:flex-col flex gap-4 px-1 md:px-12 md:py-16  lg:py-0 lg:pr-0 lg:pl-0">
-                                        <div class="lg:h-10 peer cursor-pointer font-medium relative">
+                                        class="py-8  before:flex-col flex gap-4 px-1 md:px-12 md:py-16  lg:py-0 lg:pr-0 lg:pl-0">
+                                        <div class="lg:h-10 peer hidden lg:block cursor-pointer font-medium relative">
                                             <img src="../assets/img/pweson.png" alt="" class="h-10 w-10 rounded-full">
+                                        </div>
+                                        <div class="lg:h-10 peer block lg:hidden cursor-pointer font-medium relative">
+                                            <a href="./profile.html">
+                                            <img src="../assets/img/pweson.png" alt="" class="h-10 w-10 rounded-full">
+                                        </a>
                                         </div>
                                         <div
                                             class="z-50 hidden lg:peer-hover:flex  absolute md:mt-[42px] lg:hover:flex
