@@ -60,22 +60,14 @@ function simple() {
   document.getElementById("smp").classList.add("flex");
   document.getElementById("smp").classList.remove("hidden");
   document.getElementById("cpt").classList.add("hidden");
-  document.getElementById("dtl").classList.add("hidden");
 }
 
 function cepat() {
   document.getElementById("smp").classList.remove("flex");
   document.getElementById("smp").classList.add("hidden");
-  document.getElementById("dtl").classList.add("hidden");
   document.getElementById("cpt").classList.remove("hidden");
 }
 
-function detail() {
-  document.getElementById("dtl").classList.add("flex");
-  document.getElementById("dtl").classList.remove("hidden");
-  document.getElementById("smp").classList.add("hidden");
-  document.getElementById("cpt").classList.add("hidden");
-}
 
 function gologin() {
   window.location.href = "/dist/signin.html";
