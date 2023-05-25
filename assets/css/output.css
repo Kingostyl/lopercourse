@@ -1421,10 +1421,6 @@ video {
   background-image: url('https://wallpapershome.com/images/pages/pic_h/24640.jpg');
 }
 
-.bg-\[url\(\'https\:\/\/static\.independent\.co\.uk\/2022\/12\/05\/15\/Image_3\.jpeg\?quality\=75\&width\=990\&crop\=3543\%3A2363\%2Csmart\&auto\=webp\'\)\] {
-  background-image: url('https://static.independent.co.uk/2022/12/05/15/Image_3.jpeg?quality=75&width=990&crop=3543%3A2363%2Csmart&auto=webp');
-}
-
 .bg-auto {
   background-size: auto;
 }
