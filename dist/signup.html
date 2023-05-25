@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="/assets/css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -45,10 +48,11 @@
                         placeholder="Enter Your Email" />
                     <p class="text-pink-600 font-medium text-sm" id="email-alert"></p>
                 </div>
-                <div>
+                <div class="relative">
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+                    <span class="absolute right-4 mt-4 cursor-pointer" onclick="showPas()"><i id="icon" class="fa-solid fa-eye-slash"></i></span>
                     <input type="password" name="password" id="password" placeholder="Enter Your Password"
-                        class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5" />
+                    class="bg-gray-50 border-2 hover:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5" />
                     <p class="text-pink-600 font-medium text-sm" id="password-alert"></p>
                 </div>
                 <div class="flex gap-3 left-0 pl-3 justify-start w-full items-center">
@@ -101,7 +105,7 @@
 
                             if (valuePassword !== "") {
                                 alertPassword.innerHTML = "";
-                                window.location.href = "./home.html";
+                                window.location.href = "./signin.html";
                                 document.getElementById("password").classList.add("border-green-600")
                                 document.getElementById("password").classList.remove("border-pink-600")
                             } else {
@@ -160,6 +164,26 @@
             window.addEventListener("load", function () {
                 loader.style.display = "none";
             })
+
+            function showText(show) {
+                show.type = "text";
+            }
+            function showPassword(show) {
+                show.type = "password";
+            }
+
+            function showPas() {
+                var show = document.getElementById("password");
+                icon = document.getElementById("icon");
+                if (show.type === "password") {
+                    show.type = "text";
+                    icon.className = "fa-solid fa-eye";
+                } else {
+                    show.type = "password";
+                    icon.className = "fa-solid fa-eye-slash";
+                }
+            }
+
         </script>
 </body>
 

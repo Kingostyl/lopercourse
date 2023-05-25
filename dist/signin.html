@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="../assets/css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="overflow-auto md:overflow-hidden font-quicksand">
@@ -39,7 +41,9 @@
                         placeholder="name@company.com" />
                     <p class="text-pink-600 font-medium text-sm" id="email-alert"></p>
                 </div>
-                <div>
+                <div class="relative">
+                    <span class="absolute cursor-pointer right-4 mt-4" onclick="showPas()"><i id="icon"
+                            class="fa-solid fa-eye-slash"></i></span>
                     <input type="password" name="password" id="password" placeholder="Password"
                         class="bg-gray-50 border-2 md:shadow-md border-gray-500 focus:border-none outline-none focus:ring-2 focus:ring-dark text-gray-900 sm:text-sm rounded-xl block w-[45vh] md:w-[50vh] h-14 p-2.5" />
                     <p class="text-pink-600 font-medium text-sm" id="password-alert"></p>
@@ -106,10 +110,18 @@
             window.location.href = "/dist/signup.html";
         }
 
-        var loader = document.getElementById("preloader");
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
+
+        function showPas() {
+            var show = document.getElementById("password");
+            icon = document.getElementById("icon");
+            if (show.type === "password") {
+                show.type = "text";
+                icon.className = "fa-solid fa-eye";
+            } else {
+                show.type = "password";
+                icon.className = "fa-solid fa-eye-slash";
+            }
+        }
     </script>
 </body>
 
