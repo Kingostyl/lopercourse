@@ -77,8 +77,31 @@ function gosignup() {
   window.location.href = "/dist/signup.html";
 }
 
-function goBuy(){
+function goBuy() {
   window.location.href = "/dist/pricing.html"
+}
+
+function lanjutBeli() {
+  // Popup 1
+  document.getElementById("master").classList.remove("flex");
+  document.getElementById("master").classList.add("hidden");
+  document.getElementById("lanjutkan").classList.remove("hidden");
+  document.getElementById("lanjutkan").classList.add("flex");
+  // Popup2
+  document.getElementById("master2").classList.remove("flex");
+  document.getElementById("master2").classList.add("hidden");
+  document.getElementById("lanjutkan2").classList.remove("hidden");
+  document.getElementById("lanjutkan2").classList.add("flex");
+  // popup3
+  document.getElementById("master3").classList.remove("flex");
+  document.getElementById("master3").classList.add("hidden");
+  document.getElementById("lanjutkan3").classList.remove("hidden");
+  document.getElementById("lanjutkan3").classList.add("flex");
+  // popup4
+  document.getElementById("master4").classList.remove("flex");
+  document.getElementById("master4").classList.add("hidden");
+  document.getElementById("lanjutkan4").classList.remove("hidden");
+  document.getElementById("lanjutkan4").classList.add("flex");
 }
 
 function drop() {
@@ -158,7 +181,7 @@ function downloadback() {
 
   console.log(valuePassword)
   if (valuePassword != '') {
-      window.location.href = "../assets/app/backend.zip";
+    window.location.href = "../assets/app/backend.zip";
   } else {
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
@@ -182,7 +205,7 @@ function downloadfront() {
 
   console.log(valuePassword)
   if (valuePassword != '') {
-      window.location.href = "../assets/app/front.zip";
+    window.location.href = "../assets/app/front.zip";
   } else {
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
@@ -206,7 +229,7 @@ function downloadandroid() {
 
   console.log(valuePassword)
   if (valuePassword != '') {
-      window.location.href = "../assets/app/android.zip";
+    window.location.href = "../assets/app/android.zip";
   } else {
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
@@ -230,7 +253,7 @@ function downloadmulti() {
 
   console.log(valuePassword)
   if (valuePassword != '') {
-      window.location.href = "../assets/app/multi.zip";
+    window.location.href = "../assets/app/multi.zip";
   } else {
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
