@@ -92,6 +92,7 @@ function lanjutBeli() {
   document.getElementById("master2").classList.add("hidden");
   document.getElementById("lanjutkan2").classList.remove("hidden");
   document.getElementById("lanjutkan2").classList.add("flex");
+ 
   // popup3
   document.getElementById("master3").classList.remove("flex");
   document.getElementById("master3").classList.add("hidden");
