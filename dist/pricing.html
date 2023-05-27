@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 
 <body class="font-quicksand scroll-smooth dark:dark:bg-dark bg-white ">
@@ -164,8 +165,9 @@
                                         </div>
                                         <div class="lg:h-10 peer block lg:hidden cursor-pointer font-medium relative">
                                             <a href="./profile.html">
-                                            <img src="../assets/img/pweson.png" alt="" class="h-10 w-10 rounded-full">
-                                        </a>
+                                                <img src="../assets/img/pweson.png" alt=""
+                                                    class="h-10 w-10 rounded-full">
+                                            </a>
                                         </div>
                                         <div
                                             class="z-50 hidden lg:peer-hover:flex  absolute md:mt-[42px] lg:hover:flex
@@ -441,7 +443,7 @@
 
 
         <footer class="bg-white h-auto  w-full my-7 md:px-32 py-7 px-4 dark:text-white dark:bg-dark">
-            <div class="flex gap-32 md:justify-center flex-wrap">
+            <div class="flex gap-32 justify-center flex-wrap">
                 <div class="flex flex-col gap-7">
                     <div class="flex gap-2">
                         <img src="../assets/img/icon.png" alt="" class="h-10 w-10">
@@ -521,9 +523,11 @@
         </div>
     </label>
 
+    <!-- Pop Up Pricing-->
+
     <div class="max-w-2xl mx-auto">
         <div id="popup"
-            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50  flex-col justify-center items-center">
             <div
                 class="relative w-screen md:w-max px-4 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
                 <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[400px]  bg-white">
@@ -543,172 +547,284 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
-                    <span class="text-xl font-semibold text-gray-900">Informasi pembayaran</span>
-                    <p class="text-lg font-medium text-gray-700">Card</p>
+                <div id="master" class=" w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
+                    <span class="text-xl font-semibold text-gray-900">Metode pembayaran</span>
 
-                    <div>
-                        <div class="flex border border-dark rounded-lg">
-                            <input type="number" id="number"
-                                class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
-                                placeholder="Card Number">
-                        </div>
-                        <p class="text-pink-600 font-medium text-sm" id="pin-alert"></p>
-                    </div>
+                    <div class="flex flex-row justify-between py-8 px-12 font-semibold">
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://img.freepik.com/free-icon/credit-card_318-874191.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=ais" alt="" >
+                            <p>DANA</p>
+                        </span>
 
-                    <div class="flex justify-between">
-                        <button onclick="downloadback()"
-                            class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
-                            Rp250.000</button>
-                        <button onclick="cancel()"
-                            class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png?w=740&t=st=1685084425~exp=1685085025~hmac=181d6317deb94ea7767798a5a125638eff84ef0f28ff131927d6642282b36d9b" alt="" >
+                            <p>PAYPAL</p>
+                        </span>
+                       
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/microwave_318-432792.jpg?size=626&ext=jpg&ga=GA1.2.654554952.1683689368&semt=ais" alt="" >
+                            <p>GOPAY</p>
+                        </span>
+                      
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/wallet-with-card-sticking-out_318-98531.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=sph" alt="" >
+                            <p>OVOo</p>
+                        </span>
                     </div>
+                </div>
+
+            </div>
+
+            <div id="lanjutkan" class="hidden w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3  flex-col gap-3 px-3 bg-white my-8" >
+                <p class="text-lg font-medium text-gray-700">Masukan Pin Anda</p>
+    
+                <div>
+                    <div class="flex border border-dark rounded-lg">
+                        <input type="number" id="number"
+                            class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
+                            placeholder="Masukan Pin Anda">
+                    </div>
+                    <p class="text-pink-600 font-medium text-sm" id="pin-alert"></p>
+                </div>
+    
+                <div class="flex justify-between">
+                    <button onclick="downloadback()"
+                        class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
+                        Rp250.000</button>
+                    <button onclick="cancel()"
+                        class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
                 </div>
             </div>
         </div>
+       
     </div>
 
     <div class="max-w-2xl mx-auto">
         <div id="popup2"
-            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50  flex-col justify-center items-center">
             <div
                 class="relative w-screen md:w-max px-4 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
                 <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[400px]  bg-white">
                     <div>
-                        <img src="../assets/img/front-end-devloper.jpg" alt=""
+                        <img src="../assets/img/back-end-devloper.jpg" alt=""
                             class=" h-[200px] w-screen object-cover bg-cover bg-center rounded-t-lg">
                     </div>
 
                     <div class="flex gap-6 flex-col px-2 pb-4 md:pb-0">
                         <div class="flex justify-between mt-3 md:mt-9 items-center px-2">
-                            <h1 class="text-2xl font-bold text-gray-900">Front-End devloper</h1>
+                            <h1 class="text-2xl font-bold text-gray-900">Front-end devloper</h1>
                             <p class="text-xl font-semibold text-gray-900">129.000</p>
                         </div>
-                        <p class="text-base font-medium text-gray-800 px-2">Kurikulum disusun oleh lopercourse dan
-                            pelaku
-                            industri di bidang Web Development.
+                        <p class="text-base font-medium text-gray-800 px-2">Kurikulum disusun oleh Lopercourse bersama
+                            Google
+                            Kurikulum disusun oleh lopercourse bersama AWS beserta pelaku industri Front-End Development.
                         </p>
                     </div>
                 </div>
-                <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
-                    <span class="text-xl font-semibold text-gray-900">Informasi pembayaran</span>
-                    <p class="text-lg font-medium text-gray-700">Card</p>
+                <div id="master2" class=" w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
+                    <span class="text-xl font-semibold text-gray-900">Metode pembayaran</span>
 
-                    <div>
-                        <div class="flex border border-dark rounded-lg">
-                            <input type="number" id="number2"
-                                class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
-                                placeholder="Card Number">
-                        </div>
-                        <p class="text-pink-600 font-medium text-sm" id="pin-alert2"></p>
-                    </div>
+                    <div class="flex flex-row justify-between py-8 px-12 font-semibold">
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://img.freepik.com/free-icon/credit-card_318-874191.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=ais" alt="" >
+                            <p>DANA</p>
+                        </span>
 
-                    <div class="flex justify-between">
-                        <button onclick="downloadfront()"
-                            class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
-                            Rp250.000</button>
-                        <button onclick="cancel()"
-                            class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png?w=740&t=st=1685084425~exp=1685085025~hmac=181d6317deb94ea7767798a5a125638eff84ef0f28ff131927d6642282b36d9b" alt="" >
+                            <p>PAYPAL</p>
+                        </span>
+                       
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/microwave_318-432792.jpg?size=626&ext=jpg&ga=GA1.2.654554952.1683689368&semt=ais" alt="" >
+                            <p>GOPAY</p>
+                        </span>
+                      
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/wallet-with-card-sticking-out_318-98531.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=sph" alt="" >
+                            <p>OVOo</p>
+                        </span>
                     </div>
+                </div>
+
+            </div>
+
+            <div id="lanjutkan2" class="hidden w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3  flex-col gap-3 px-3 bg-white my-8" >
+                <p class="text-lg font-medium text-gray-700">Masukan Pin Anda</p>
+    
+                <div>
+                    <div class="flex border border-dark rounded-lg">
+                        <input type="number" id="number"
+                            class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
+                            placeholder="Masukan Pin Anda">
+                    </div>
+                    <p class="text-pink-600 font-medium text-sm" id="pin-alert"></p>
+                </div>
+    
+                <div class="flex justify-between">
+                    <button onclick="downloadback()"
+                        class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
+                        Rp250.000</button>
+                    <button onclick="cancel()"
+                        class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
                 </div>
             </div>
         </div>
+       
     </div>
 
     <div class="max-w-2xl mx-auto">
         <div id="popup3"
-            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50  flex-col justify-center items-center">
             <div
                 class="relative w-screen md:w-max px-4 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
                 <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[400px]  bg-white">
                     <div>
-                        <img src="../assets/img/mobile-devloper.jpg" alt=""
+                        <img src="../assets/img/back-end-devloper.jpg" alt=""
                             class=" h-[200px] w-screen object-cover bg-cover bg-center rounded-t-lg">
                     </div>
 
                     <div class="flex gap-6 flex-col px-2 pb-4 md:pb-0">
                         <div class="flex justify-between mt-3 md:mt-9 items-center px-2">
                             <h1 class="text-2xl font-bold text-gray-900">Android devloper</h1>
-                            <p class="text-xl font-semibold text-gray-900">197.000</p>
+                            <p class="text-xl font-semibold text-gray-900">187.900</p>
                         </div>
-                        <p class="text-base font-medium text-gray-800 px-2">Kurikulum didesain dengan persetujuan dari
-                            Tim
-                            Google Android untuk mempersiapkan developer Android standar Global.
+                        <p class="text-base font-medium text-gray-800 px-2">Kurikulum disusun oleh Lopercourse bersama
+                            Google
+                            Kurikulum disusun oleh lopercourse bersama AWS beserta pelaku industri Android devloper.
                         </p>
                     </div>
                 </div>
-                <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
-                    <span class="text-xl font-semibold text-gray-900">Informasi pembayaran</span>
-                    <p class="text-lg font-medium text-gray-700">Card</p>
+                <div id="master3" class=" w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
+                    <span class="text-xl font-semibold text-gray-900">Metode pembayaran</span>
 
-                    <div>
-                        <div class="flex border border-dark rounded-lg">
-                            <input type="number" id="number3"
-                                class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
-                                placeholder="Card Number">
-                        </div>
-                        <p class="text-pink-600 font-medium text-sm" id="pin-alert3"></p>
-                    </div>
+                    <div class="flex flex-row justify-between py-8 px-12 font-semibold">
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://img.freepik.com/free-icon/credit-card_318-874191.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=ais" alt="" >
+                            <p>DANA</p>
+                        </span>
 
-                    <div class="flex justify-between">
-                        <button onclick="downloadandroid()"
-                            class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
-                            Rp250.000</button>
-                        <button onclick="cancel()"
-                            class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png?w=740&t=st=1685084425~exp=1685085025~hmac=181d6317deb94ea7767798a5a125638eff84ef0f28ff131927d6642282b36d9b" alt="" >
+                            <p>PAYPAL</p>
+                        </span>
+                       
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/microwave_318-432792.jpg?size=626&ext=jpg&ga=GA1.2.654554952.1683689368&semt=ais" alt="" >
+                            <p>GOPAY</p>
+                        </span>
+                      
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/wallet-with-card-sticking-out_318-98531.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=sph" alt="" >
+                            <p>OVOo</p>
+                        </span>
                     </div>
+                </div>
+
+            </div>
+
+            <div id="lanjutkan3" class="hidden w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3  flex-col gap-3 px-3 bg-white my-8" >
+                <p class="text-lg font-medium text-gray-700">Masukan Pin Anda</p>
+    
+                <div>
+                    <div class="flex border border-dark rounded-lg">
+                        <input type="number" id="number"
+                            class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
+                            placeholder="Masukan Pin Anda">
+                    </div>
+                    <p class="text-pink-600 font-medium text-sm" id="pin-alert"></p>
+                </div>
+    
+                <div class="flex justify-between">
+                    <button onclick="downloadback()"
+                        class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
+                        Rp250.000</button>
+                    <button onclick="cancel()"
+                        class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
                 </div>
             </div>
         </div>
+       
     </div>
 
     <div class="max-w-2xl mx-auto">
         <div id="popup4"
-            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50 justify-center items-center">
+            class="hidden overflow-x-hidden backdrop-blur-md w-full bg-black/30 overflow-y-auto fixed md:h-full top-0 bottom-0 left-0 right-0 z-50  flex-col justify-center items-center">
             <div
                 class="relative w-screen md:w-max px-4 flex gap-6 flex-col overflow-hidden h-screen md:mt-0 mt-[20vh] md:h-auto">
                 <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[400px]  bg-white">
                     <div>
-                        <img src="../assets/img/desktop-devloper.jpg" alt=""
+                        <img src="../assets/img/back-end-devloper.jpg" alt=""
                             class=" h-[200px] w-screen object-cover bg-cover bg-center rounded-t-lg">
                     </div>
 
                     <div class="flex gap-6 flex-col px-2 pb-4 md:pb-0">
                         <div class="flex justify-between mt-3 md:mt-9 items-center px-2">
-                            <h1 class="text-2xl font-bold text-gray-900">MultiPlatform devloper</h1>
-                            <p class="text-xl font-semibold text-gray-900">231.000</p>
+                            <h1 class="text-2xl font-bold text-gray-900">MultiPlatform dev</h1>
+                            <p class="text-xl font-semibold text-gray-900">231.900</p>
                         </div>
                         <p class="text-base font-medium text-gray-800 px-2">Kurikulum disusun oleh Lopercourse bersama
                             Google
-                            beserta
-                            pelaku industri Multi-Platform App Development.
+                            Kurikulum disusun oleh lopercourse bersama AWS beserta pelaku industri MultiPlatform dev.
                         </p>
                     </div>
                 </div>
-                <div class="w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
-                    <span class="text-xl font-semibold text-gray-900">Informasi pembayaran</span>
-                    <p class="text-lg font-medium text-gray-700">Card</p>
+                <div id="master4" class=" w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3 flex flex-col gap-3 px-3 bg-white">
+                    <span class="text-xl font-semibold text-gray-900">Metode pembayaran</span>
 
-                    <div>
-                        <div class="flex border border-dark rounded-lg">
-                            <input type="number" id="number4"
-                                class="w-auto rounded-lg flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
-                                placeholder="Card Number">
-                        </div>
-                        <p class="text-pink-600 font-medium text-sm" id="pin-alert4"></p>
-                    </div>
+                    <div class="flex flex-row justify-between py-8 px-12 font-semibold">
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://img.freepik.com/free-icon/credit-card_318-874191.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=ais" alt="" >
+                            <p>DANA</p>
+                        </span>
 
-                    <div class="flex justify-between">
-                        <button onclick="downloadmulti()"
-                            class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
-                            Rp250.000</button>
-                        <button onclick="cancel()"
-                            class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px] ">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png?w=740&t=st=1685084425~exp=1685085025~hmac=181d6317deb94ea7767798a5a125638eff84ef0f28ff131927d6642282b36d9b" alt="" >
+                            <p>PAYPAL</p>
+                        </span>
+                       
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/microwave_318-432792.jpg?size=626&ext=jpg&ga=GA1.2.654554952.1683689368&semt=ais" alt="" >
+                            <p>GOPAY</p>
+                        </span>
+                      
+                        <span  onclick="lanjutBeli()" class="cursor-pointer w-[50px]">
+                            <img src="https://img.freepik.com/free-icon/wallet-with-card-sticking-out_318-98531.jpg?size=626&ext=jpg&ga=GA1.1.654554952.1683689368&semt=sph" alt="" >
+                            <p>OVOo</p>
+                        </span>
                     </div>
+                </div>
+
+            </div>
+
+            <div id="lanjutkan4" class="hidden w-auto md:w-[500px] rounded-lg h-auto md:h-[215px] py-3  flex-col gap-3 px-3 bg-white my-8" >
+                <p class="text-lg font-medium text-gray-700">Masukan Pin Anda</p>
+    
+                <div>
+                    <div class="flex border border-dark rounded-lg">
+                        <input type="number" id="number"
+                            class="w-auto rounded-lg  flex-1 text-sm bg-grey-light text-grey-darkest  p-3 focus:outline-none"
+                            placeholder="Masukan Pin Anda">
+                    </div>
+                    <p class="text-pink-600 font-medium text-sm" id="pin-alert"></p>
+                </div>
+    
+                <div class="flex justify-between">
+                    <button onclick="downloadback()"
+                        class="bg-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-white">Pay
+                        Rp250.000</button>
+                    <button onclick="cancel()"
+                        class="bg-white border-4 border-dark h-10 w-32 flex items-center justify-center text-sm font-semibold rounded-md text-dark">Cancel</button>
                 </div>
             </div>
         </div>
+       
     </div>
+
+   
+
+
+
 
     <script src="./script.js"></script>
 </body>
