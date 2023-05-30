@@ -574,12 +574,20 @@ video {
   right: 0px;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .right-4 {
   right: 1rem;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.top-3 {
+  top: 0.75rem;
 }
 
 .z-10 {
@@ -592,10 +600,6 @@ video {
 
 .z-50 {
   z-index: 50;
-}
-
-.col-end-1 {
-  grid-column-end: 1;
 }
 
 .float-right {
@@ -770,6 +774,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[10vh\] {
+  margin-top: 10vh;
+}
+
 .mt-\[20vh\] {
   margin-top: 20vh;
 }
@@ -854,6 +862,10 @@ video {
   height: 156px;
 }
 
+.h-\[192px\] {
+  height: 192px;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
@@ -904,14 +916,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[192px\] {
-  height: 192px;
 }
 
 .w-10 {
@@ -1046,21 +1050,6 @@ video {
   width: 100vw;
 }
 
-<<<<<<< HEAD
-=======
-.w-\[30px\] {
-  width: 30px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[40px\] {
-  width: 40px;
-}
-
->>>>>>> acb2512030ba71e96de4ebb2b69c62e627c3ed12
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1426,10 +1415,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-current {
-  background-color: currentColor;
-}
-
 .bg-\[url\(\'https\:\/\/i\.ytimg\.com\/vi\/JMH-5j_AIvU\/maxresdefault\.jpg\'\)\] {
   background-image: url('https://i.ytimg.com/vi/JMH-5j_AIvU/maxresdefault.jpg');
 }
@@ -1485,6 +1470,11 @@ video {
 
 .p-\[1px\] {
   padding: 1px;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-1 {
@@ -1585,11 +1575,6 @@ video {
 .py-32 {
   padding-top: 8rem;
   padding-bottom: 8rem;
-}
-
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
 }
 
 .py-8 {
@@ -2184,6 +2169,19 @@ video {
     height: 300px;
   }
 
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:gap-0 {
+    gap: 0px;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:text-center {
     text-align: center;
   }
@@ -2195,6 +2193,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:right-10 {
+    right: 2.5rem;
+  }
+
+  .md\:top-10 {
+    top: 2.5rem;
+  }
+
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
