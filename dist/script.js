@@ -68,7 +68,6 @@ function cepat() {
   document.getElementById("cpt").classList.remove("hidden");
 }
 
-
 function gologin() {
   window.location.href = "/dist/signin.html";
 }
@@ -78,7 +77,7 @@ function gosignup() {
 }
 
 function goBuy() {
-  window.location.href = "/dist/pricing.html"
+  window.location.href = "/dist/pricing.html";
 }
 
 function lanjutBeli() {
@@ -92,7 +91,7 @@ function lanjutBeli() {
   document.getElementById("master2").classList.add("hidden");
   document.getElementById("lanjutkan2").classList.remove("hidden");
   document.getElementById("lanjutkan2").classList.add("flex");
- 
+
   // popup3
   document.getElementById("master3").classList.remove("flex");
   document.getElementById("master3").classList.add("hidden");
@@ -180,8 +179,8 @@ function downloadback() {
   let valuePassword = document.getElementById("number").value;
   let alertPassword = document.getElementById("pin-alert");
 
-  console.log(valuePassword)
-  if (valuePassword != '') {
+  console.log(valuePassword);
+  if (valuePassword != "") {
     window.location.href = "../assets/app/backend.zip";
   } else {
     if (valuePassword !== "") {
@@ -204,8 +203,8 @@ function downloadfront() {
   let valuePassword = document.getElementById("number2").value;
   let alertPassword = document.getElementById("pin-alert2");
 
-  console.log(valuePassword)
-  if (valuePassword != '') {
+  console.log(valuePassword);
+  if (valuePassword != "") {
     window.location.href = "../assets/app/front.zip";
   } else {
     if (valuePassword !== "") {
@@ -228,8 +227,8 @@ function downloadandroid() {
   let valuePassword = document.getElementById("number3").value;
   let alertPassword = document.getElementById("pin-alert3");
 
-  console.log(valuePassword)
-  if (valuePassword != '') {
+  console.log(valuePassword);
+  if (valuePassword != "") {
     window.location.href = "../assets/app/android.zip";
   } else {
     if (valuePassword !== "") {
@@ -252,8 +251,8 @@ function downloadmulti() {
   let valuePassword = document.getElementById("number4").value;
   let alertPassword = document.getElementById("pin-alert4");
 
-  console.log(valuePassword)
-  if (valuePassword != '') {
+  console.log(valuePassword);
+  if (valuePassword != "") {
     window.location.href = "../assets/app/multi.zip";
   } else {
     if (valuePassword !== "") {
@@ -263,8 +262,6 @@ function downloadmulti() {
     }
   }
 }
-
-
 
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
@@ -278,3 +275,5 @@ darkToggle.addEventListener("click", function () {
     localStorage.theme = "light";
   }
 });
+
+

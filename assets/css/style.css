@@ -1,0 +1,17 @@
+.ful {
+    animation-delay: 1s;
+    animation: color 2s;
+    animation-iteration-count: infinite;
+    transform-origin: right;
+    animation-timing-function: linear;
+}
+
+@keyframes color {
+    0% {
+      transform: translateX(0) scaleX(6);
+    }
+  
+    100% {
+      transform: translatex(500%) scalex(6);
+    }
+  }
