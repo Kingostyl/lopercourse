@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/icon.png">
-    <title>lopercourse - Blog</title>
+    <link rel="icon" href="../../assets/img/icon.png">
+    <title>Mengapa Kamu Harus Belajar Web Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,20 +14,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/output.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/output.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body class="font-quicksand scroll-smooth dark:text-white dark:bg-dark bg-white text-dark">
-    <div class="overflow-x-hidden dark:bg-slate-800 bg-gray-50 md:h-full bg-cover w-full">
+<body class="font-quicksand scroll-smooth dark:text-white dark:bg-dark">
+    <div class="overflow-x-hidden dark:bg-slate-800 bg-white md:h-full bg-cover w-full">
         <header id="nav">
             <div class="relative z-20">
                 <div class="px-6  md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-1">
 
                     <div class="flex items-center justify-between">
                         <div class="relative z-20 flex items-center gap-3">
-                            <img src="../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
-                            <a href="./home.html"
+                            <img src="../../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
+                            <a href="../home.html"
                                 class="lg:text-dark text-dark dark:text-white lg:dark:text-white font-bold text-xl"
                                 id="logo">
                                 Lopercourse
@@ -53,6 +53,7 @@
                                     <ul id="nav-name"
                                         class="px-6 pt-20  items-center space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
                                         <div class="mb-3">
+                                            <label for="simple-search" class="sr-only">Search</label>
                                             <div class="relative w-full flex items-center">
                                                 <div class="absolute  left-0 flex items-center px-2">
                                                     <svg aria-hidden="true" class="w-5 h-5 text-gray-500"
@@ -63,11 +64,10 @@
                                                             clip-rule="evenodd"></path>
                                                     </svg>
                                                 </div>
-                                                <input type="text" name="" id="cariKat"
-                                                    class="border block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
-                                                    placeholder="Apa yang ingin anda pelajari?">
+                                                <input type="text" id="simple-search"
+                                                    class="border  block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
+                                                    placeholder="Apa yang ingin anda pelajari?" required>
                                             </div>
-
                                         </div>
                                         <div class="hidden lg:flex flex-col">
                                             <li
@@ -79,15 +79,15 @@
                                             flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
                                                 <li
                                                     class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
-                                                    <a href="../dist/category/Back-end-dev.html"> Back-end
+                                                    <a href="./Back-end-dev.html"> Back-end
                                                 </li></a>
                                                 <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
-                                                        href="../dist/category/Front-end-dev.html"> Front-end</li></a>
+                                                        href="./Front-end-dev.html"> Front-end</li></a>
                                                 <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
-                                                        href="./category/Android-dev.html">Android</li></a>
+                                                        href="./Android-dev.html">Android</li></a>
                                                 <li
                                                     class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
-                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                    <a href="./Multiflatfom-dev.html"> Multi-Platform
                                                 </li></a>
                                             </div>
                                         </div>
@@ -100,25 +100,25 @@
                                                 id="down">
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Back-end-dev.html"> Back-end
+                                                    <a href="./Back-end-dev.html"> Back-end
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Front-end-dev.html"> Front-end
+                                                    <a href="./Front-end-dev.html"> Front-end
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Android-dev.html">Android
+                                                    <a href="./Android-dev.html">Android
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                    <a href="./Multiflatfom-dev.html"> Multi-Platform
                                                 </li></a>
                                             </div>
                                         </div>
                                         <li
                                             class="lg:h-9 group peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
-                                            <a href="./pricing.html" class="relative">Pricing</a>
+                                            <a href="../pricing.html" class="relative">Pricing</a>
                                         </li>
                                         <div class="hidden lg:flex flex-col">
                                             <li
@@ -130,11 +130,11 @@
                                             flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
                                                 <li
                                                     class="px-5 py-3 text-black  font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
-                                                    <a href="./Blog.html">Blog
+                                                    <a href="../Blog.html">Blog
                                                 </li></a>
                                                 <li
                                                     class="px-5 py-3 text-black  font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
-                                                    <a href="./about.html">About
+                                                    <a href="../about.html">About
                                                 </li></a>
                                             </div>
                                         </div>
@@ -147,11 +147,11 @@
                                                 id="dwn">
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200 ">
-                                                    <a href="./Blog.html">Blog
+                                                    <a href="../Blog.html">Blog
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./about.html">About
+                                                    <a href="../about.html">About
                                                 </li></a>
                                             </div>
                                         </div>
@@ -160,11 +160,12 @@
                                     <div
                                         class="py-8  before:flex-col flex gap-4 px-1 md:px-12 md:py-16  lg:py-0 lg:pr-0 lg:pl-0">
                                         <div class="lg:h-10 peer hidden lg:block cursor-pointer font-medium relative">
-                                            <img src="../assets/img/pweson.png" alt="" class="h-10 w-10 rounded-full">
+                                            <img src="../../assets/img/pweson.png" alt=""
+                                                class="h-10 w-10 rounded-full">
                                         </div>
                                         <div class="lg:h-10 peer block lg:hidden cursor-pointer font-medium relative">
-                                            <a href="./profile.html">
-                                                <img src="../assets/img/pweson.png" alt=""
+                                            <a href="../profile.html">
+                                                <img src="../../assets/img/pweson.png" alt=""
                                                     class="h-10 w-10 rounded-full">
                                             </a>
                                         </div>
@@ -174,19 +175,19 @@
                                             flex-col bg-white divide-y divide-gray-100 rounded-lg shadow w-32  lg:right-0 lg:-mr-9">
                                             <ul class="py-2 text-sm text-dark dark:text-dark">
                                                 <li>
-                                                    <a href="./profile.html"
+                                                    <a href="../profile.html"
                                                         class="block px-4 py-2 hover:bg-gray-100 font-medium">My
                                                         page</a>
                                                 </li>
                                             </ul>
                                             <div class="py-1">
-                                                <a href="./signin.html"
+                                                <a href="../signin.html"
                                                     class="block px-4 py-2 text-sm text-dark hover:bg-gray-100 font-medium">Sign
                                                     out</a>
                                             </div>
                                         </div>
                                         <div class="flex gap-32">
-                                            <a href="./signin.html"
+                                            <a href="../signin.html"
                                                 class="md:hidden flex items-center justify-end font-bold">Sign
                                                 out</a>
                                         </div>
@@ -199,143 +200,176 @@
             </div>
         </header>
 
-        <div
-            class="bg-slate-50 dark:bg-slate-800 h-screen w-full px-10 md:px-32 mt-32 lg:mt-0  flex-col md:flex items-center justify-center">
-            <div class="flex-col flex items-center md:items-start  justify-center md:gap-0 gap-9">
-                <div class="md:flex md:flex-row items-center md:gap-0 gap-3 flex-col">
-                    <div>
-                        <h1 class="font-bold text-center md:text-start text-3xl md:w-[70%]">Kami membimbing murid kami
-                            mendapatkan skill untuk membangun karir di bidang pengembangan web. </h1>
-                    </div>
-                    <div class="mt-6 md:mt-0">
-                        <img src="https://www.hostinger.co.id/h-assets/images/sales/february/homepage-hero-ae-small-2x.webp"
-                            alt="" class="">
-                    </div>
-                </div>
 
-                <a href="#blog"
-                    class=" py-0 flex justify-center items-center dark:bg-white dark:text-dark bg-dark w-32 h-9 text-white rounded-md font-semibold">Lihat
-                    Blog</a>
+
+
+        <main class="mt-32 px-3 md:px-36 flex flex-col gap-10">
+            <div class="w-auto md:w-[790px] mx-auto flex-col items-center gap-10 flex justify-center">
+                <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/62fb5342f9c8ec6add844b4f_woman.jpg"
+                    alt="" class="rounded-lg h-auto md:h-[500px]">
+                <h1 class="font-bold text-4xl text-center">Mengapa Kamu Harus Belajar Web Development</h1>
+
+                <div class="post-content w-richtext">
+                    <p>Jika kamu bekerja di industri teknologi, seorang pengusaha, atau hanya seorang penggemar
+                        teknologi yang ingin meningkatkan keterampilanmu, maka mempelajari web development harus kamu
+                        pertimbangkan. Keterampilan yang kamu pelajari bisa digunakan di berbagai bidang, dan juga bisa
+                        meningkatkan kreativitas and pemikiran kritismu. Artikel ini akan memberikan sejumlah alasan
+                        mengapa kamu harus belajar web development.</p>
+
+                    <p>Yuk, mari baca lebih lanjut!</p>
+
+                    <p>Table of Contents:</p>
+                    <br>
+                    <p>- High in Demand</p>
+                    <p>- Multiple Career Paths</p>
+                    <p>- Versatility</p>
+                    <p>- Flexibility</p>
+                    <p>- It's Creative and Fun</p>
+                    <p>- It Makes You Think and Learn Better</p>
+                    <p>- You Don't Need a Degree</p>
+                    <p>- Multiple Ways to Learn</p>
+                    <br>
+                    <p>Web development adalah salah satu keterampilan yang wajib dikuasai terutama bagi kamu yang
+                        bekerja di industri teknologi, memiliki usaha sendiri, maupun penggemar dunia teknologi.</p>
+                    <br>
+                    <p>Hidup di lingkungan yang semakin digital membuat web development menjadi sangat penting.
+                        Keterampilan yang kamu pelajari dari web development bisa digunakan di banyak bidang, di antara
+                        lain data science, software development, dan UX design. Selain membuat dan meningkatkan kualitas
+                        situs web, web development juga membantu membangun soft skill seperti kreativitas dan berpikir
+                        kritis.</p>
+                    <br>
+                    <p>Jadi jika kamu ingin meningkatkan karier atau membawa bisnismu ke level berikutnya, mempelajari
+                        web development adalah cara yang cerdas. Di dalam artikel ini, kami akan menjelaskan mengapa
+                        mempelajari web development wajib kamu pertimbangkan.</p>
+                    <br>
+                    <p>Mari kita mulai!</p>
+                    <br>
+                    <p><strong>Banyak Diminati</strong></p>
+                    <br>
+                    <p>Banyak orang yang meminati pekerjaan web development, dan pekerjaan ini tidak akan hilang dalam
+                        waktu dekat. Dunia akan selalu membutuhkan situs web, layanan web, dan aplikasi web. Belum lagi
+                        jika kamu memiliki sebuah bisnis, kamu bisa memperluas jangkauannya bila kamu memiliki kemampuan
+                        untuk membangun situs web.</p>
+                    <br>
+                    <p><strong>Jenjang Karier Beragam&nbsp;</strong></p>
+                    <br>
+                    <p>Menjadi seorang developer juga bisa memberikanmu jenjang karier yang beragam. Jika kamu ingin
+                        penghasilan yang stabil, kamu bisa memilih untuk bekerja di perusahaan besar. Namun, jika kamu
+                        mencari kebebasan dalam pekerjaan, kamu bisa mengambil pekerjaan freelance. Kamu juga bisa
+                        bekerja sebagai konsultan web setelah kamu memperoleh lebih banyak pengalaman di bidang web
+                        development.</p>
+                    <br>
+                    <p><strong>Serbaguna</strong></p>
+                    <br>
+                    <p>Apakah kamu tahu bahwa web development dapat memberikan peluang untuk bekerja di bidang yang
+                        beragam? Dunia web development sendiri memiliki banyak spesialisasi. Kamu bisa menjadi pakar UI
+                        design, pengembangan aplikasi, blockchain, dan aplikasi Internet of Things (IoT). Mana yang
+                        menurutmu paling menarik?</p>
+                    <br>
+                    <p><strong>Fleksibel</strong></p>
+                    <br>
+                    <p>Mengenai fleksibilitas, karier di web development memiliki banyak kelebihan. Kamu bisa bekerja
+                        untuk diri sendiri, dan kamu bahkan bisa mengembangkan proyek pribadi (aplikasi, game, bisnis)
+                        menggunakan keterampilan yang kamu dapatkan dari web development.</p>
+                    <br>
+                    <p>Karena sebagian besar pekerjaan web development dilakukan secara online, maka kamu bisa bekerja
+                        dari rumah atau di manapun yang kamu pilih. Selama kamu terhubung dengan internet, kamu bisa
+                        dengan mudah bekerja dari cafe, di pegunungan, atau di pinggir pantai. Siapa sih yang tidak mau?
+                    </p>
+                    <br>
+                    <p><strong>Kreatif dan Menyenangkan</strong></p>
+                    <br>
+                    <p>Satu hal yang kamu harus ketahui, membuat situs web itu sangat menyenangkan. Kamu akan merasa
+                        puas saat melihat karyamu berkembang dari tahap wireframing hingga selesai.&nbsp;</p>
+                    <br>
+                    <p>Berbeda dengan bidang lainnya seperti teknik, kamu tidak wajib untuk mengikuti proses yang ketat.
+                        Secara umum, kamu akan memiliki kebebasan kreatif untuk membangun apa yang kamu inginkan di
+                        setiap proyek yang kamu lakukan. Kamu bisa memilih layout, warna, font, dan visual yang kamu
+                        inginkan. Web development adalah bidang yang kamu bisa gunakan untuk menunjukkan keunikan dan
+                        kreativitasmu.</p>
+                    <br>
+                    <p><strong>Web Development Membantumu Berpikir dan Belajar Lebih Baik</strong></p>
+                    <br>
+                    <p>Jika kamu menjadi seorang web developer, pemecahan masalah dan kreativitas akan kamu gunakan
+                        secara terus menerus. Kamu akan ditantang untuk menemukan cara baru dalam melakukan berbagai hal
+                        guna meningkatkan pengalaman end user. Seiring waktu, kamu akan mengembangkan kemampuanmu untuk
+                        melihat sesuatu dari perspektif yang berbeda dan berpikir logis untuk meningkatkan pengalaman
+                        dan interaksi dengan pengguna.</p>
+                    <br>
+                    <p>Web development juga akan membantumu untuk menjadi pelajar yang lebih baik. Di saat kamu menerima
+                        proyek baru, kamu akan terus berhadapan dengan teknologi, framework, dan perpustakaan kode yang
+                        baru. Dengan ini, kamu secara otomatis akan terus mempertajam keterampilanmu.</p>
+                    <br>
+                    <p><strong>Tak Harus Kuliah</strong></p>
+                    <br>
+                    <p>Meskipun gelar ilmu komputer dapat meningkatkan peluang untuk mendapatkan pekerjaan di bidang
+                        ini, kenyataannya kamu tidak memerlukannya untuk menjadi seorang web developer. Kamu hanya perlu
+                        meningkatkan keterampilan dan portofoliomu, karena inilah yang menjadi basis kriteria yang
+                        dicari perusahaan besar. Bahkan, menurut sebuah<a
+                            href="https://insights.stackoverflow.com/survey/2016#developer-profile-education">
+                            survey</a> yang dilakukan Stack Overflow pada 2016, hampir 70% web developer belajar sejara
+                        otodidak.&nbsp;</p>
+                    <br>
+                    <p><strong>Banyak Cara untuk Mempelajarinya</strong></p>
+                    <br>
+                    <p>Selain berkuliah, ada berbagai cara yang kamu bisa lakukan untuk mempelajari web development. Dan
+                        ini beberapa di antaranya:</p>
+                    <br>
+                    <ul role="list">
+                        <li>Belajar Sendiri: Jika kamu giat dan disiplin, kamu bisa belajar web development secara
+                            otodidak menggunakan berbagai sumber yang tersedia online. Kamu bisa membaca sejumlah
+                            artikel mengenai web development, menonton video YouTube, atau bertanya di komunitas web
+                            development.</li>
+                    </ul>
+                    <br>
+                    <ul role="list">
+                        <li>Kursus Online: Ada banyak kursus online web development yang bisa kamu ikuti. Yang membuat
+                            kursus ini menarik, adalah kamu bisa memilih topik mana yang kamu ingin pelajari. Jika kamu
+                            ingin menjadi front-end developer, kamu bisa mengambil kursus yang mengajarkan HTML, CSS,
+                            dan JavaScript. Selain itu, kursus-kursus online ini bisa memberikanmu kredit kuliah yang
+                            bisa digunakan jika kamu memutuskan untuk melanjutkan studi suatu saat nanti.</li>
+                    </ul>
+                    <br>
+                    <ul role="list">
+                        <li>Bootcamp: Jika kamu ingin belajar web development dengan cepat, maka kamu bisa mengikuti
+                            program bootcamp. Dalam beberapa tahun terakhir, bootcamp menjadi sangat populer bagi mereka
+                            yang ingin menjadi web developer. Apa yang membuat bootcamp lebih banyak diminati, adalah
+                            kamu bisa belajar sambil mengerjakan proyek secara langsung.</li>
+                    </ul>
+                    <br>
+                    <p>Jadi tunggu apa lagi? Mau menjadi bagian perkembangan dunia digital? Mempelajari web development
+                        adalah langkah pertama untuk menjadi bagian perkembangan itu.</p>
+                    <br>
+                    <p>Saat kamu memutuskan untuk mengikuti bootcamp untuk mempelajari web development, Practicum siap
+                        membantu!</p>
+                    <br>
+                    <p>Practicum menawarkan program web development yang mempersiapkanmu untuk menghadapi dunia
+                        pekerjaan. Selain mempelajari web development, kamu akan membangun portofolio yang bisa kamu
+                        tampilkan saat melamar pekerjaan suatu saat nanti.&nbsp;</p>
+                    <br>
+                    <p>Tak hanya itu, kamu akan mengerjakan proyek secara langsung dengan bimbingan instruktur yang ahli
+                        dalam bidangnya. Mereka akan memastikan kamu bisa membangun situs web dari dasar pada saat kamu
+                        lulus dari program ini.</p>
+                    <br>
+                    <p>Apakah kamu siap untuk belajar? Daftar ke program kami sekarang!</p>
+
+                </div>
             </div>
-        </div>
+
+            <div class="flex justify-between">
+                <p class="font-semibold text-sm md:text-lg cursor-no-drop text-gray-500">← Sebelumnya</p>
+                <a class="font-semibold text-sm md:text-lg text-blue-500" href="#">Selanjutnya →</a>
+            </div>
+        </main>
     </div>
 
-    <main class="my-32 md:px-20 px-10 dark:bg-dark bg-white">
-        <span class="font-bold text-3xl" id="blog">Lastest Blog</span>
-        <div class="mt-20">
-            <div class="flex-wrap flex gap-10 justify-center">
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/646469657594894b572625b6_mengenal-lebih-dalam-tentang-framework-javascript.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px]">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                            Mengenal Framework JavaScript
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Bagi para programmer, tentu tidak
-                        asing dengan istilah framework JavaScript...</p>
-                </div>
 
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1631031509251-62a73758f9d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1439&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengungkap Insight yang Tersembunyi
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Perkembangan teknologi di
-                        masa-masa modern membuat berbagai bisnis melibatkan....
-                    </p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Definisi, Teknik, dan Aplikasi
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Perkembangan dan tren Artificial
-                        Intelligence atau kecerdasan buatan mampu memberikan ....</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/6458ab5d28a7f33d06232688_memahami-dasar-dasar-react-js-untuk-web-development-p-500.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Memahami Dasar-dasar React JS
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Saat mempelajari proses
-                        pengembangan website, tentu ada beberapa bahasa pemrograman...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Perbedaan Front-End dengan Back-End
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Web development adalah proses
-                        membangun dan memelihara website. Ada banyak peran dan...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/643eee5b6a8c3f69e8309d87_tren-dan-prediksi-masa-depan-artificial-intelligence.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px]">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Tren dan Prediksi Masa Depan A.I
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Teknologi yang berkembang pesat
-                        membuat banyak temuan baru yang...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/62fb5342f9c8ec6add844b4f_woman.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengapa Kamu Harus Belajar Web Development
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Jika kamu bekerja di industri
-                        teknologi, seorang pengusaha, atau hanya seorang penggemar...
-                    </p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/6449439310cb496fe0f1af4b_mengenal-pemrograman-r-untuk-analisis-statistik-p-500.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengenal Pemrograman R untuk Analisis Statistik
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Tantangan bisnis di era teknologi
-                        yang mulai berkembang sangat cepat membuat beberapa...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        5 Pekerjaan IT Dengan Prospek Cerah di Masa Depan
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Pada era digital seperti
-                        sekarang, pekerjaan di bidang IT semakin diminati oleh banyak orang...</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-
-    <footer class="bg-white h-auto w-full my-5 md:px-32 px-4 dark:text-white dark:bg-dark">
-        <div class="flex gap-32 md:justify-center flex-wrap">
+    <footer class="bg-white h-auto w-full mt-20 md:px-32 px-4 dark:text-white dark:bg-dark">
+        <div class="flex gap-32 md:justify-center flex-wrap md:flex-nowrap">
             <div class="flex flex-col gap-7">
                 <div class="flex gap-2">
-                    <img src="../assets/img/icon.png" alt="" class="h-10 w-10">
-                    <h1 class="font-bold text-3xl">Lopercourse</h1>
+                    <img src="../../assets/img/icon.png" alt="" class="h-10 w-10">
+                    <a href="../home.html" class="font-bold text-3xl">Lopercourse</a>
                 </div>
 
                 <div class="font-normal flex flex-col">
@@ -369,12 +403,12 @@
                 </div>
             </div>
 
-            <div class="flex gap-5 flex-wrap">
+            <div class="flex gap-5 flex-wrap md:flex-nowrap">
                 <div class="flex flex-col gap-3">
                     <h1 class="font-bold text-2xl w-[70%]">Decode Ideas
                         Discover Potential</h1>
 
-                    <a href="/dist/about.html" class="font-normal text-lg hover:underline">Tentang kami</a>
+                    <a href="../about.html" class="font-normal text-lg hover:underline">Tentang kami</a>
                 </div>
 
                 <div class="flex gap-16 mt-10 md:mt-0">
@@ -398,8 +432,6 @@
     </footer>
 
 
-
-
     <input type="checkbox" class="hidden" id="dark-toggle" />
     <label for="dark-toggle">
         <div
@@ -415,7 +447,7 @@
         </div>
     </label>
 
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

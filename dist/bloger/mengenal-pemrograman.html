@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/img/icon.png">
-    <title>lopercourse - Blog</title>
+    <link rel="icon" href="../../assets/img/icon.png">
+    <title>Menganal Pemrograman R untuk Analisis Statistik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,20 +14,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/output.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/output.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
-<body class="font-quicksand scroll-smooth dark:text-white dark:bg-dark bg-white text-dark">
-    <div class="overflow-x-hidden dark:bg-slate-800 bg-gray-50 md:h-full bg-cover w-full">
+<body class="font-quicksand scroll-smooth dark:text-white dark:bg-dark">
+    <div class="overflow-x-hidden dark:bg-slate-800 bg-white md:h-full bg-cover w-full">
         <header id="nav">
             <div class="relative z-20">
                 <div class="px-6  md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-1">
 
                     <div class="flex items-center justify-between">
                         <div class="relative z-20 flex items-center gap-3">
-                            <img src="../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
-                            <a href="./home.html"
+                            <img src="../../assets/img/icon.png" alt="" class="w-10 h-10 lg:w-14 lg:h-14">
+                            <a href="../home.html"
                                 class="lg:text-dark text-dark dark:text-white lg:dark:text-white font-bold text-xl"
                                 id="logo">
                                 Lopercourse
@@ -53,6 +53,7 @@
                                     <ul id="nav-name"
                                         class="px-6 pt-20  items-center space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-4">
                                         <div class="mb-3">
+                                            <label for="simple-search" class="sr-only">Search</label>
                                             <div class="relative w-full flex items-center">
                                                 <div class="absolute  left-0 flex items-center px-2">
                                                     <svg aria-hidden="true" class="w-5 h-5 text-gray-500"
@@ -63,11 +64,10 @@
                                                             clip-rule="evenodd"></path>
                                                     </svg>
                                                 </div>
-                                                <input type="text" name="" id="cariKat"
-                                                    class="border block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
-                                                    placeholder="Apa yang ingin anda pelajari?">
+                                                <input type="text" id="simple-search"
+                                                    class="border  block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
+                                                    placeholder="Apa yang ingin anda pelajari?" required>
                                             </div>
-
                                         </div>
                                         <div class="hidden lg:flex flex-col">
                                             <li
@@ -79,15 +79,15 @@
                                             flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
                                                 <li
                                                     class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
-                                                    <a href="../dist/category/Back-end-dev.html"> Back-end
+                                                    <a href="./Back-end-dev.html"> Back-end
                                                 </li></a>
                                                 <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
-                                                        href="../dist/category/Front-end-dev.html"> Front-end</li></a>
+                                                        href="./Front-end-dev.html"> Front-end</li></a>
                                                 <li class="px-5 py-3 text-black font-medium hover:bg-gray-200"><a
-                                                        href="./category/Android-dev.html">Android</li></a>
+                                                        href="./Android-dev.html">Android</li></a>
                                                 <li
                                                     class="px-5 py-3 text-black font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
-                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                    <a href="./Multiflatfom-dev.html"> Multi-Platform
                                                 </li></a>
                                             </div>
                                         </div>
@@ -100,25 +100,25 @@
                                                 id="down">
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Back-end-dev.html"> Back-end
+                                                    <a href="./Back-end-dev.html"> Back-end
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Front-end-dev.html"> Front-end
+                                                    <a href="./Front-end-dev.html"> Front-end
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Android-dev.html">Android
+                                                    <a href="./Android-dev.html">Android
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./category/Multiflatfom-dev.html"> Multi-Platform
+                                                    <a href="./Multiflatfom-dev.html"> Multi-Platform
                                                 </li></a>
                                             </div>
                                         </div>
                                         <li
                                             class="lg:h-9 group peer cursor-pointer font-medium relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 ">
-                                            <a href="./pricing.html" class="relative">Pricing</a>
+                                            <a href="../pricing.html" class="relative">Pricing</a>
                                         </li>
                                         <div class="hidden lg:flex flex-col">
                                             <li
@@ -130,11 +130,11 @@
                                             flex-col bg-white drop-shadow-lg rounded-lg absolute z-50 lg:mt-8">
                                                 <li
                                                     class="px-5 py-3 text-black  font-medium hover:bg-gray-200 rounded-tr-lg rounded-tl-lg">
-                                                    <a href="./Blog.html">Blog
+                                                    <a href="../Blog.html">Blog
                                                 </li></a>
                                                 <li
                                                     class="px-5 py-3 text-black  font-medium hover:bg-gray-200 rounded-br-lg rounded-bl-lg">
-                                                    <a href="./about.html">About
+                                                    <a href="../about.html">About
                                                 </li></a>
                                             </div>
                                         </div>
@@ -147,11 +147,11 @@
                                                 id="dwn">
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200 ">
-                                                    <a href="./Blog.html">Blog
+                                                    <a href="../Blog.html">Blog
                                                 </li></a>
                                                 <li
                                                     class="lg:px-5 px-2 rounded-xl py-2 lg:py-3 text-black dark:text-white font-medium hover:bg-gray-200">
-                                                    <a href="./about.html">About
+                                                    <a href="../about.html">About
                                                 </li></a>
                                             </div>
                                         </div>
@@ -160,11 +160,12 @@
                                     <div
                                         class="py-8  before:flex-col flex gap-4 px-1 md:px-12 md:py-16  lg:py-0 lg:pr-0 lg:pl-0">
                                         <div class="lg:h-10 peer hidden lg:block cursor-pointer font-medium relative">
-                                            <img src="../assets/img/pweson.png" alt="" class="h-10 w-10 rounded-full">
+                                            <img src="../../assets/img/pweson.png" alt=""
+                                                class="h-10 w-10 rounded-full">
                                         </div>
                                         <div class="lg:h-10 peer block lg:hidden cursor-pointer font-medium relative">
-                                            <a href="./profile.html">
-                                                <img src="../assets/img/pweson.png" alt=""
+                                            <a href="../profile.html">
+                                                <img src="../../assets/img/pweson.png" alt=""
                                                     class="h-10 w-10 rounded-full">
                                             </a>
                                         </div>
@@ -174,19 +175,19 @@
                                             flex-col bg-white divide-y divide-gray-100 rounded-lg shadow w-32  lg:right-0 lg:-mr-9">
                                             <ul class="py-2 text-sm text-dark dark:text-dark">
                                                 <li>
-                                                    <a href="./profile.html"
+                                                    <a href="../profile.html"
                                                         class="block px-4 py-2 hover:bg-gray-100 font-medium">My
                                                         page</a>
                                                 </li>
                                             </ul>
                                             <div class="py-1">
-                                                <a href="./signin.html"
+                                                <a href="../signin.html"
                                                     class="block px-4 py-2 text-sm text-dark hover:bg-gray-100 font-medium">Sign
                                                     out</a>
                                             </div>
                                         </div>
                                         <div class="flex gap-32">
-                                            <a href="./signin.html"
+                                            <a href="../signin.html"
                                                 class="md:hidden flex items-center justify-end font-bold">Sign
                                                 out</a>
                                         </div>
@@ -199,143 +200,194 @@
             </div>
         </header>
 
-        <div
-            class="bg-slate-50 dark:bg-slate-800 h-screen w-full px-10 md:px-32 mt-32 lg:mt-0  flex-col md:flex items-center justify-center">
-            <div class="flex-col flex items-center md:items-start  justify-center md:gap-0 gap-9">
-                <div class="md:flex md:flex-row items-center md:gap-0 gap-3 flex-col">
-                    <div>
-                        <h1 class="font-bold text-center md:text-start text-3xl md:w-[70%]">Kami membimbing murid kami
-                            mendapatkan skill untuk membangun karir di bidang pengembangan web. </h1>
-                    </div>
-                    <div class="mt-6 md:mt-0">
-                        <img src="https://www.hostinger.co.id/h-assets/images/sales/february/homepage-hero-ae-small-2x.webp"
-                            alt="" class="">
+
+
+
+        <main class="mt-32 px-3 md:px-36 flex flex-col gap-10">
+            <div class="w-auto md:w-[790px] mx-auto flex-col items-center gap-10 flex justify-center">
+                <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/6449439310cb496fe0f1af4b_mengenal-pemrograman-r-untuk-analisis-statistik.jpg"
+                    alt="" class="rounded-lg h-auto md:h-[500px]">
+                <h1 class="font-bold text-4xl text-center">Menganal Pemrograman R untuk Analisis Statistik</h1>
+
+                <div class="post-row-v3">
+                    <div class="post-content w-richtext">
+                        <p>Tantangan bisnis di era teknologi yang berkembang sangat cepat membuat beberapa penyesuaian
+                            di bidang bisnis dan pemasaran, salah satunya dengan kemampuan programming. Dari sekian
+                            banyak bahasa pemrograman, ada satu bahasa yang memiliki manfaat di bidang analisa dan
+                            statistik yaitu R programming.</p>
+                        <br>
+                        <p>Dikutip langsung dari <a href="https://www.r-project.org/about.html">R Project</a>, R
+                            programming merupakan bahasa pemrograman yang sering digunakan untuk komputasi statistik,
+                            analisis data, hingga untuk penelitian ilmiah. Statusnya sebagai bahasa pemrograman yang
+                            populer, R programming sering digunakan untuk keperluan bisnis seperti statistik, data,
+                            penelitian, dan pemasaran dengan tujuan, membersihkan, menganalisis, memvisualisasikan, dan
+                            menyajikan data.</p>
+                        <br>
+                        <p>Mengulik sejarah, R programming merupakan bahasa pemrograman S yang dikembangkan oleh
+                            perusahaan bernama AT&amp;T Bell Laboratories yang sekarang menjadi Lucent Technologies pada
+                            akhir tahun 1970-an.</p>
+                        <br>
+                        <p>Memang R programming merupakan versi gratis dari bahasa pemrograman S yang mengharuskan Anda
+                            untuk bayar, sejenis pemrograman S-PLUS yang digunakan oleh para peneliti,
+                            mahasiswa/akademisi untuk berbagai kegiatan ilmiahnya.</p>
+                        <br>
+                        <p>Awal mulanya, pemrograman R dibentuk oleh Ross Ihaka dan Robert Gentleman dari Universitas
+                            Auckland. Kenapa menggunakan nama R? Uniknya pemilihan nama R diambil dari huruf pertama
+                            kedua orang tersebut. Keduanya merupakan pegiat statistika atau sebutannya statistikawan
+                            asal Selandia Baru.</p>
+                        <br>
+                        <p>R programming terus mengalami perkembangan dari tim intinya yang terdiri dari ahli statistik,
+                            komputer &amp; pemrograman, hingga ahli ekonomi dari berbagai institusi besar di berbagai
+                            dunia. Pengembangannya terus berkembang pesat karena software tersebut bisa digunakan secara
+                            gratis, bahkan berlisensi GNU General Public License.</p>
+                        <br>
+                        <p>Selain sejarah, Anda juga akan mengenal, memahami, dan mengerti konsep dasar dan manfaat dari
+                            R programming untuk kebutuhan analisis statistik, apalagi bagi para data science.&nbsp;</p>
+                        <br>
+                        <h2 class="font-semibold text-xl">Pengertian R Programming</h2>
+                        <br>
+                        <p>R programming merupakan salah satu bahasa pemrograman di dalam lingkup big data yaitu untuk
+                            pengolahan data yang bersifat open source. Bisa dibilang, bahasa pemrograman R itu gratis
+                            dan bisa digunakan serta dimaksimalkan oleh berbagai pihak.</p>
+                        <br>
+                        <p>Sebagai salah satu kelebihannya, R programming yang open source membuatnya menjadi bahasa
+                            pemrograman dengan pengguna aktif yang banyak di seluruh dunia, tentunya berkontribusi dan
+                            terus berkembang.</p>
+                        <br>
+                        <p>Bahasa pemrograman satu ini juga memiliki fleksibilitas yang tinggi karena menjadi pilihan
+                            terbaik untuk melakukan manajemen data yang rumit atau kompleks dan analisis statistik yang
+                            penting untuk kebutuhan bisnis. Beberapa contoh dari implementasi atau pengaplikasian R
+                            programming adalah monitoring data di platform ecommerce.</p>
+                        <br>
+                        <p>Dalam lingkup ecommerce, R programming bisa digunakan untuk melakukan analisis data
+                            cross-selling dari serangkaian data yang dimiliki. Hasil dari analisis data R programming
+                            menghasilkan beberapa rekomendasi produk serta pola belanja para pengguna/user di platform
+                            ecommerce tersebut.</p>
+                        <br>
+                        <p>Lalu data ini bisa digunakan untuk memperbaiki atau meningkatkan fitur di platform ecommerce
+                            sehingga memberikan rekomendasi produk dengan harga terbaik bagi user yang tepat.</p>
+                        <br>
+                        <h2 class="font-semibold text-xl">Kelebihan R Programming</h2>
+                        <br>
+                        <p>Sebagai salah satu bahasa pemrograman yang populer, tidak heran bila R memiliki minat yang
+                            besar dari berbagai perusahaan di sektor-sektor bisnis. Karena R programming dalam big data
+                            memiliki banyak kelebihan, beberapa di antaranya yaitu:</p>
+                        <br>
+                        <p class="font-semibold text-xl">1. Bersifat Open Source dan Gratis</p>
+                        <br>
+                        <p>Tentu bila menyinggung kelebihan yang pertama dari R programming adalah bersifat open source
+                            atau gratis karena tidak perlu membeli lisensi. Bila gratis, tentu banyak sumbangsih dan
+                            kontribusi yang diberikan oleh berbagai komunitas/grup sehingga menjadikan R programming
+                            sebagai salah satu bahasa pemrograman yang populer.</p>
+                        <br>
+                        <p class="font-semibold text-xl">2. Memiliki Banyak Library dan Package</p>
+                        <br>
+                        <p>R menjadi pilihan terbaik dalam melakukan visualisasi data, sebab tersedia banyak sekali
+                            library dan packages yang mendukung R dalam membangun visualisasi yang menarik. Sebagai
+                            contoh, kehadiran ggplot2 yang digunakan untuk membuat grafik, lattice untuk menunjukkan
+                            hubungan dari variabel, rCharts untuk memunculkan visualisasi dari javascript dengan
+                            menggunakan R, googleVis untuk menggunakan google chart, ggvis untuk aplikas grammar grafik
+                            dan menampilkan pada web browser.&nbsp;</p>
+                        <br>
+                        <p class="font-semibold text-xl">3. Sangat Cocok Untuk Analisis Statistik</p>
+                        <br>
+                        <p>Dari fungsinya memang R programming dibuat untuk sebagai suatu bahasa pemrograman yang mampu
+                            melakukan analisis maupun manipulasi data. Kemampuan ini yang membuat R punya banyak manfaat
+                            yang bisa digunakan dalam melakukan analisis data seperti mencari mean atau rata-rata dari
+                            barisan data yang ada.&nbsp;</p>
+                        <br>
+                        <p>Menggunakan R programming, maka Anda hanya perlu memakai fungsi dari mean. Kelebihan lain
+                            dari R programming yaitu mudah dipelajari bila dibandingkan dengan bahasa pemrograman lain,
+                            seperti java, C#, javascript, dan python memberikan hasil yang relatif lebih cepat.</p>
+                        <p>4. Memiliki Komunitas yang Aktif dan Suportif</p>
+                        <br>
+                        <p>Selain banyak digunakan oleh data scientist di perusahaan besar, pengguna R programming juga
+                            mudah diakses di Rpubs dan Github, juga tersedia koleksi packages yang dibagikan secara
+                            gratis oleh sesama pengguna.</p>
+                        <br>
+                        <p>Kelebihan R satu ini memang sangat unik karena memiliki komunitas yang tergabung dalam satu
+                            grup stack overflow yang sangat aktif. Di grup tersebut Anda juga bisa bertanya jika
+                            memiliki kesulitan saat menggunakan R programming atau memberi solusi ke pengguna lain.</p>
+                        <br>
+                        <h2 class="font-semibold text-xl">Syntax Dasar R Programming</h2>
+                        <br>
+                        <p>Meski mudah, namun untuk mempelajari bahasa pemrograman R memang tetap membutuhkan waktu yang
+                            tidak sedikit dan tentunya harus konsisten.&nbsp;</p>
+                        <br>
+                        <p>Apalagi bagi Anda yang baru memulai dan seringkali menemui kesulitan karena belum terbiasa.
+                            Lantas bila ingin menjadi data scientist, maka skill pemrograman R wajib dikuasai. Bahasa
+                            pemrograman ini akan membuka banyak peluang karena R banyak digunakan di berbagai
+                            perusahaan.&nbsp;</p>
+                        <br>
+                        <h3 class="font-semibold text-xl">Variabel R Programming</h3>
+                        <br>
+                        <p>Penggunaan variabel di R programming cukup mirip dengan bahasa pemrograman lain yaitu aturan
+                            penulisan variabel harus berupa kombinasi huruf besar dan kecil, lalu angka, titik, dan juga
+                            garis bawah. Serta tidak boleh menggunakan spasi dan hindari kata yang sama dengan perintah
+                            R, contohnya While, Function, True False, IF, dan lain sebagainya.</p>
+                        <br>
+                        <h3 class="font-semibold text-xl">Vector R Programming</h3>
+                        <br>
+                        <p>Pada bahasa pemrograman R, vector merupakan array 1 dimensi maksudnya yaitu penyimpanan data
+                            hanya dengan satu variabel saja dan diakses dengan indeks. Lalu indeks pada R programming
+                            dimulai dari angka 1, bukan 0 karena dalam R, inisialisasi vector menggunakan fungsi c()
+                            yang merupakan singkatan yaitu combine atau kombinasi.</p>
+                        <br>
+                        <h3 class="font-semibold text-xl">Operator R Programming</h3>
+                        <br>
+                        <p>Operator yang digunakan pada R programming sama dengan bahasa pemrograman lainnya yaitu
+                            dengan operator aritmatika seperti '+' untuk penjumlahan, lalu operator perbandingan seperti
+                            '!=' artinya tidak sama dengan, dan terakhir operator logika seperti '&amp;&amp;' untuk
+                            logika AND.</p>
+                            <br>
+                        <h3 class="font-semibold text-xl">Function R Programming</h3>
+                        <br>
+                        <p>Function atau fungsi adalah susunan kode-kode untuk melakukan tugas tertentu seperti
+                            perhitungan aritmatika, analisis statistik, dan sebagainya, contohnya seperti while adalah
+                            fungsi yang akan melakukan kode perintah selama kondisi yang diberikan benar dan menguji
+                            kondisi sebelum melakukan perintah kode.</p>
+                            <br>
+                        <h2 class="font-semibold text-xl">Kesimpulan Mengenal Pemrograman R untuk Analisis Statistik</h2>
+                        <br>
+                        <p>Pentingnya bahasa R untuk dipelajari seorang data science karena sudah banyak
+                            diimplementasikan untuk mengolah big data, visualisasi data, pemodelan statistik maupun
+                            membangun machine learning oleh developer dan tentunya data scientist.&nbsp;</p>
+                            <br>
+                        <p>R programming juga bisa digunakan oleh perusahaan untuk melakukan analisis cross-selling dan
+                            dari hasil analisis tersebut, perusahaan dapat memberikan rekomendasi produk berdasarkan
+                            kebiasaan berbelanja konsumen.</p>
+                            <br>
+                        <p>Bingung untuk memulainya? Anda bisa melakukan pembelajaran yang lebih komprehensif untuk R
+                            programming dengan berbagai cara mengikuti program bootcamp. Practicum menyediakan solusi
+                            untuk mempelajari berbagai macam ilmu dengan tutor yang kaya akan pengalaman di bidang
+                            pengelolaan data dan pemahaman fundamental data science.</p>
+                            <br>
+                        <p>Program bootcamp dari Practicum sangat fokus pada praktik sehingga Anda bisa langsung
+                            merasakan caranya mengelola data dan mengaplikasikannya.</p>
+                            <br>
+                        <p>Pembelajaran yang interaktif, tim support yang tanggap, dan sudah teruji karena 78% lulusan
+                            Practicum berhasil mendapatkan pekerjaan di bidang high-tech lulus dari <a
+                                href="https://practicum.com/id-idn/data-scientist/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Inhouse_gl_IDN_Countrypage_Allprofs_ua_sem&amp;utm_content=cid--17886645321_gid--138989546545_network--g_placement--_dvc--c_tid--kwd-295892685499_mt--p_creative--613657972037&amp;utm_term=practicum&amp;gclid=Cj0KCQjw8e-gBhD0ARIsAJiDsaV6GUMI3lBlj6rvva1BUyxvBhFcLIPcdawN2S9x9T0oHJdS8QcWfuoaAl_NEALw_wcB">program
+                                bootcamp data science dari Practicum</a>.</p>
+
                     </div>
                 </div>
-
-                <a href="#blog"
-                    class=" py-0 flex justify-center items-center dark:bg-white dark:text-dark bg-dark w-32 h-9 text-white rounded-md font-semibold">Lihat
-                    Blog</a>
             </div>
-        </div>
+
+            <div class="flex justify-between">
+                <p class="font-semibold text-sm md:text-lg cursor-no-drop text-gray-500">← Sebelumnya</p>
+                <a class="font-semibold text-sm md:text-lg text-blue-500" href="#">Selanjutnya →</a>
+            </div>
+        </main>
     </div>
 
-    <main class="my-32 md:px-20 px-10 dark:bg-dark bg-white">
-        <span class="font-bold text-3xl" id="blog">Lastest Blog</span>
-        <div class="mt-20">
-            <div class="flex-wrap flex gap-10 justify-center">
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/646469657594894b572625b6_mengenal-lebih-dalam-tentang-framework-javascript.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px]">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                            Mengenal Framework JavaScript
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Bagi para programmer, tentu tidak
-                        asing dengan istilah framework JavaScript...</p>
-                </div>
 
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1631031509251-62a73758f9d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1439&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengungkap Insight yang Tersembunyi
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Perkembangan teknologi di
-                        masa-masa modern membuat berbagai bisnis melibatkan....
-                    </p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Definisi, Teknik, dan Aplikasi
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Perkembangan dan tren Artificial
-                        Intelligence atau kecerdasan buatan mampu memberikan ....</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/6458ab5d28a7f33d06232688_memahami-dasar-dasar-react-js-untuk-web-development-p-500.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Memahami Dasar-dasar React JS
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Saat mempelajari proses
-                        pengembangan website, tentu ada beberapa bahasa pemrograman...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Perbedaan Front-End dengan Back-End
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Web development adalah proses
-                        membangun dan memelihara website. Ada banyak peran dan...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/643eee5b6a8c3f69e8309d87_tren-dan-prediksi-masa-depan-artificial-intelligence.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px]">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Tren dan Prediksi Masa Depan A.I
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Teknologi yang berkembang pesat
-                        membuat banyak temuan baru yang...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/62fb5342f9c8ec6add844b4f_woman.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengapa Kamu Harus Belajar Web Development
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Jika kamu bekerja di industri
-                        teknologi, seorang pengusaha, atau hanya seorang penggemar...
-                    </p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://uploads-ssl.webflow.com/62fb5342f9c8ec6f21844b32/6449439310cb496fe0f1af4b_mengenal-pemrograman-r-untuk-analisis-statistik-p-500.jpg"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        Mengenal Pemrograman R untuk Analisis Statistik
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Tantangan bisnis di era teknologi
-                        yang mulai berkembang sangat cepat membuat beberapa...</p>
-                </div>
-
-                <div class="w-96 gap-3 flex flex-col ">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                        alt="" class="rounded-lg w-96 h-[192px] object-cover">
-                    <span
-                        class="font-semibold text-xl hover:underline transition-all ease-in-out cursor-pointer duration-300">
-                        5 Pekerjaan IT Dengan Prospek Cerah di Masa Depan
-                    </span>
-                    <p class="text-base font-medium cursor-pointer hover:no-underline">Pada era digital seperti
-                        sekarang, pekerjaan di bidang IT semakin diminati oleh banyak orang...</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-
-    <footer class="bg-white h-auto w-full my-5 md:px-32 px-4 dark:text-white dark:bg-dark">
-        <div class="flex gap-32 md:justify-center flex-wrap">
+    <footer class="bg-white h-auto w-full mt-20 md:px-32 px-4 dark:text-white dark:bg-dark">
+        <div class="flex gap-32 md:justify-center flex-wrap md:flex-nowrap">
             <div class="flex flex-col gap-7">
                 <div class="flex gap-2">
-                    <img src="../assets/img/icon.png" alt="" class="h-10 w-10">
-                    <h1 class="font-bold text-3xl">Lopercourse</h1>
+                    <img src="../../assets/img/icon.png" alt="" class="h-10 w-10">
+                    <a href="../home.html" class="font-bold text-3xl">Lopercourse</a>
                 </div>
 
                 <div class="font-normal flex flex-col">
@@ -369,12 +421,12 @@
                 </div>
             </div>
 
-            <div class="flex gap-5 flex-wrap">
+            <div class="flex gap-5 flex-wrap md:flex-nowrap">
                 <div class="flex flex-col gap-3">
                     <h1 class="font-bold text-2xl w-[70%]">Decode Ideas
                         Discover Potential</h1>
 
-                    <a href="/dist/about.html" class="font-normal text-lg hover:underline">Tentang kami</a>
+                    <a href="../about.html" class="font-normal text-lg hover:underline">Tentang kami</a>
                 </div>
 
                 <div class="flex gap-16 mt-10 md:mt-0">
@@ -398,8 +450,6 @@
     </footer>
 
 
-
-
     <input type="checkbox" class="hidden" id="dark-toggle" />
     <label for="dark-toggle">
         <div
@@ -415,7 +465,7 @@
         </div>
     </label>
 
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
