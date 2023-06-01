@@ -674,11 +674,6 @@ video {
   margin-bottom: 1.75rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .-mr-6 {
   margin-right: -1.5rem;
 }
@@ -767,10 +762,6 @@ video {
   margin-top: 1rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
@@ -781,10 +772,6 @@ video {
 
 .mt-\[10vh\] {
   margin-top: 10vh;
-}
-
-.mt-\[20vh\] {
-  margin-top: 20vh;
 }
 
 .mt-\[90\%\] {
@@ -883,6 +870,10 @@ video {
   height: 250px;
 }
 
+.h-\[26px\] {
+  height: 26px;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
@@ -921,18 +912,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[240px\] {
-  height: 240px;
-}
-
-.h-\[26px\] {
-  height: 26px;
 }
 
 .w-10 {
@@ -1003,6 +982,10 @@ video {
   width: 110px;
 }
 
+.w-\[123px\] {
+  width: 123px;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1067,40 +1050,12 @@ video {
   width: 100vw;
 }
 
-.w-\[590px\] {
-  width: 590px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[123px\] {
-  width: 123px;
-}
-
-.w-\[900px\] {
-  width: 900px;
-}
-
-.w-\[00px\] {
-  width: 00px;
-}
-
-.w-\[5000px\] {
-  width: 5000px;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .-translate-y-20 {
@@ -1136,20 +1091,16 @@ video {
   cursor: pointer;
 }
 
-.list-disc {
-  list-style-type: disc;
-}
-
 .list-decimal {
   list-style-type: decimal;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.list-disc {
+  list-style-type: disc;
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1469,15 +1420,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'https\:\/\/i\.ytimg\.com\/vi\/JMH-5j_AIvU\/maxresdefault\.jpg\'\)\] {
   background-image: url('https://i.ytimg.com/vi/JMH-5j_AIvU/maxresdefault.jpg');
 }
@@ -1577,11 +1519,6 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -1667,6 +1604,11 @@ video {
   padding-bottom: 8rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1680,11 +1622,6 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-4 {
@@ -2375,16 +2312,16 @@ html {
     height: 8rem;
   }
 
-  .md\:h-\[215px\] {
-    height: 215px;
-  }
-
   .md\:h-\[300px\] {
     height: 300px;
   }
 
   .md\:h-\[320px\] {
     height: 320px;
+  }
+
+  .md\:h-\[339px\] {
+    height: 339px;
   }
 
   .md\:h-\[37px\] {
@@ -2399,6 +2336,10 @@ html {
     height: 400px;
   }
 
+  .md\:h-\[444px\] {
+    height: 444px;
+  }
+
   .md\:h-\[480px\] {
     height: 480px;
   }
@@ -2407,8 +2348,20 @@ html {
     height: 481px;
   }
 
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
   .md\:h-\[526px\] {
     height: 526px;
+  }
+
+  .md\:h-\[527px\] {
+    height: 527px;
+  }
+
+  .md\:h-\[592px\] {
+    height: 592px;
   }
 
   .md\:h-auto {
@@ -2421,34 +2374,6 @@ html {
 
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .md\:h-\[339px\] {
-    height: 339px;
-  }
-
-  .md\:h-\[px\] {
-    height: px;
-  }
-
-  .md\:h-\[592px\] {
-    height: 592px;
-  }
-
-  .md\:h-\[4444px\] {
-    height: 4444px;
-  }
-
-  .md\:h-\[444px\] {
-    height: 444px;
-  }
-
-  .md\:h-\[527px\] {
-    height: 527px;
   }
 
   .md\:w-52 {
@@ -2507,6 +2432,10 @@ html {
     width: 75%;
   }
 
+  .md\:w-\[780px\] {
+    width: 780px;
+  }
+
   .md\:w-\[790px\] {
     width: 790px;
   }
@@ -2532,21 +2461,6 @@ html {
     width: max-content;
   }
 
-<<<<<<< HEAD
-=======
-  .md\:w-\[790px\] {
-    width: 790px;
-  }
-
-  .md\:w-\[0px\] {
-    width: 0px;
-  }
-
-  .md\:w-\[780px\] {
-    width: 780px;
-  }
-
->>>>>>> 69d29ce45d329c27e07a95f303d25ea2b8867cd2
   .md\:translate-y-32 {
     --tw-translate-y: 8rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
