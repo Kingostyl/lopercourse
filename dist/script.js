@@ -167,8 +167,8 @@ function blog() {
   console.log(xstatus);
 }
 
-function validateNumber(value) {
-  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+function validatePassword(value) {
+  if (/^\d+$/.test(value)) {
     return true;
   } else {
     return false;
@@ -176,11 +176,11 @@ function validateNumber(value) {
 }
 
 function downloadback() {
-  let valuePassword = document.getElementById("number").value;
+  let valuePassword = document.getElementById("password").value;
   let alertPassword = document.getElementById("pin-alert");
 
   console.log(valuePassword);
-  if (valuePassword != "") {
+  if (validatePassword(valuePassword)) {
     window.location.href = "../assets/app/backend.zip";
   } else {
     if (valuePassword !== "") {
@@ -191,8 +191,8 @@ function downloadback() {
   }
 }
 
-function validateNumber(value) {
-  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+function validatePassword(value) {
+  if (/^\d+$/.test(value)) {
     return true;
   } else {
     return false;
@@ -200,11 +200,11 @@ function validateNumber(value) {
 }
 
 function downloadfront() {
-  let valuePassword = document.getElementById("number2").value;
+  let valuePassword = document.getElementById("password2").value;
   let alertPassword = document.getElementById("pin-alert2");
 
   console.log(valuePassword);
-  if (valuePassword != "") {
+  if (validatePassword(valuePassword)) {
     window.location.href = "../assets/app/front.zip";
   } else {
     if (valuePassword !== "") {
@@ -215,8 +215,8 @@ function downloadfront() {
   }
 }
 
-function validateNumber(value) {
-  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+function validatePassword(value) {
+  if (/^\d+$/.test(value)) {
     return true;
   } else {
     return false;
@@ -224,11 +224,11 @@ function validateNumber(value) {
 }
 
 function downloadandroid() {
-  let valuePassword = document.getElementById("number3").value;
+  let valuePassword = document.getElementById("password3").value;
   let alertPassword = document.getElementById("pin-alert3");
 
   console.log(valuePassword);
-  if (valuePassword != "") {
+  if (validatePassword(valuePassword)) {
     window.location.href = "../assets/app/android.zip";
   } else {
     if (valuePassword !== "") {
@@ -239,8 +239,8 @@ function downloadandroid() {
   }
 }
 
-function validateNumber(value) {
-  if (/^\w+([\.-]?\w+)\w+([\.-]?\w+)(\.\w{2,3})+$/.test(value)) {
+function validatePassword(value) {
+  if (/^\d+$/.test(value)) {
     return true;
   } else {
     return false;
@@ -248,11 +248,11 @@ function validateNumber(value) {
 }
 
 function downloadmulti() {
-  let valuePassword = document.getElementById("number4").value;
+  let valuePassword = document.getElementById("password4").value;
   let alertPassword = document.getElementById("pin-alert4");
 
   console.log(valuePassword);
-  if (valuePassword != "") {
+  if (validatePassword(valuePassword)) {
     window.location.href = "../assets/app/multi.zip";
   } else {
     if (valuePassword !== "") {
