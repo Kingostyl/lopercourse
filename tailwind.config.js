@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
       },
+      screens: {
+        'bwh': { 'raw': '(min-width: 321px)' },
+      },
     },
   },
   plugins: [],
