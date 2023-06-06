@@ -1459,6 +1459,10 @@ video {
   background-size: cover;
 }
 
+.bg-auto {
+  background-size: auto;
+}
+
 .bg-bottom {
   background-position: bottom;
 }
