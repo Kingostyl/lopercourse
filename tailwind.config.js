@@ -17,7 +17,7 @@ module.exports = {
         quicksand: ["Quicksand", "sans-serif"],
       },
       screens: {
-        'bwh': { 'raw': '(min-width: 321px)' },
+        'bwh': { 'raw': '(min-width: 375px)' },
       },
     },
   },

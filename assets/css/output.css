@@ -1459,10 +1459,6 @@ video {
   background-size: cover;
 }
 
-.bg-auto {
-  background-size: auto;
-}
-
 .bg-bottom {
   background-position: bottom;
 }
@@ -2945,7 +2941,7 @@ html {
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 375px) {
   .bwh\:h-screen {
     height: 100vh;
   }
