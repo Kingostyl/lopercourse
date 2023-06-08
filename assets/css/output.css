@@ -598,60 +598,20 @@ video {
   top: 0.75rem;
 }
 
-.bottom-\[40\] {
-  bottom: 40;
-}
-
-.bottom-\[40\%\] {
-  bottom: 40%;
-}
-
-.bottom-\[20\%\] {
-  bottom: 20%;
-}
-
-.bottom-\[30\%\] {
-  bottom: 30%;
-}
-
-.bottom-\[0\%\] {
-  bottom: 0%;
-}
-
-.bottom-\[25\%\] {
-  bottom: 25%;
-}
-
-.-bottom-0 {
-  bottom: -0px;
-}
-
-.-bottom-\[105\] {
-  bottom: -105;
-}
-
-.-bottom-\[10\%\] {
-  bottom: -10%;
-}
-
-.bottom-\[10\%\] {
-  bottom: 10%;
-}
-
-.bottom-\[50\%\] {
-  bottom: 50%;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[0\%\] {
-  top: 0%;
-}
-
 .top-\[70\%\] {
   top: 70%;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
+.-top-4 {
+  top: -1rem;
 }
 
 .z-10 {
@@ -847,10 +807,6 @@ video {
   margin-top: 10vh;
 }
 
-.mt-\[90\%\] {
-  margin-top: 90%;
-}
-
 .block {
   display: block;
 }
@@ -921,6 +877,10 @@ video {
 
 .h-\[100px\] {
   height: 100px;
+}
+
+.h-\[150px\] {
+  height: 150px;
 }
 
 .h-\[156px\] {
@@ -1115,6 +1075,10 @@ video {
   width: 100vw;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1154,6 +1118,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .list-decimal {
@@ -1886,12 +1854,25 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-green-500 {
+  --tw-text-opacity: 1;
+  color: rgb(34 197 94 / var(--tw-text-opacity));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
 
 .accent-dark {
   accent-color: #0f172a;
+}
+
+.accent-black {
+  accent-color: #000;
+}
+
+.accent-green-300 {
+  accent-color: #86efac;
 }
 
 .opacity-25 {
@@ -2106,10 +2087,6 @@ html {
   border-width: 4px;
 }
 
-.hover\:border:hover {
-  border-width: 1px;
-}
-
 .hover\:border-dark:hover {
   --tw-border-opacity: 1;
   border-color: rgb(15 23 42 / var(--tw-border-opacity));
@@ -2287,11 +2264,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:hover\:bg-white:hover) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:hover\:text-white:hover) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2390,10 +2362,6 @@ html {
 
   .md\:mt-9 {
     margin-top: 2.25rem;
-  }
-
-  .md\:mt-\[20\%\] {
-    margin-top: 20%;
   }
 
   .md\:mt-\[42px\] {
