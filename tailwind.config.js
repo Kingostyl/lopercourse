@@ -1,23 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/**/*.{html,js}","index.html"],
-  darkMode: 'class',
+  content: ["./dist/**/*.{html,js}", "index.html"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         dark: "#0f172a",
       },
       margin: {
-        'mauto': '0px -0.5rem',
+        mauto: "0px -0.5rem",
       },
       backgroundImage: {
-        'welcome': "url('/assets/img/welcome.jpg')"
+        welcome: "url('/assets/img/welcome.jpg')",
       },
       fontFamily: {
         quicksand: ["Quicksand", "sans-serif"],
       },
       screens: {
-        'bwh': { 'raw': '(min-width: 375px)' },
+        bwh: { raw: "(min-width: 375px)" },
       },
     },
   },

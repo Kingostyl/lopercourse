@@ -205,7 +205,7 @@ function downloadfront() {
 
   console.log(valuePassword);
   if (validatePassword(valuePassword)) {
-    window.location.href = "../assets/app/front.zip";
+    window.location.href = "../assets/app/frontend.zip";
   } else {
     if (valuePassword !== "") {
       alertPassword.innerHTML = "";
