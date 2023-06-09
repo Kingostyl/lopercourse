@@ -606,6 +606,50 @@ video {
   top: 70%;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.top-\[20\] {
+  top: 20;
+}
+
+.top-\[20x\] {
+  top: 20x;
+}
+
+.top-\[20px\] {
+  top: 20px;
+}
+
+.top-\[20p\] {
+  top: 20p;
+}
+
+.top-\[10p\] {
+  top: 10p;
+}
+
+.top-\[1px\] {
+  top: 1px;
+}
+
+.bottom-\[40px\] {
+  bottom: 40px;
+}
+
+.bottom-\[0px\] {
+  bottom: 0px;
+}
+
+.bottom-\[80px\] {
+  bottom: 80px;
+}
+
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
 .z-10 {
   z-index: 10;
 }
