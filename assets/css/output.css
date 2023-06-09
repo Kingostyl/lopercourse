@@ -2824,6 +2824,14 @@ html {
     height: 100vh;
   }
 
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
+  .lg\:h-1 {
+    height: 0.25rem;
+  }
+
   .lg\:w-14 {
     width: 3.5rem;
   }
