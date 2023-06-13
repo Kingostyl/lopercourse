@@ -654,6 +654,14 @@ video {
   top: 1rem;
 }
 
+.bottom-\[100\%\] {
+  bottom: 100%;
+}
+
+.right-\[30rem\] {
+  right: 30rem;
+}
+
 .-z-50 {
   z-index: -50;
 }
@@ -750,6 +758,16 @@ video {
 .my-\[300px\] {
   margin-top: 300px;
   margin-bottom: 300px;
+}
+
+.my-48 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .-mr-6 {
@@ -870,6 +888,14 @@ video {
 
 .mb-\[30px\] {
   margin-bottom: 30px;
+}
+
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .block {
@@ -1610,12 +1636,39 @@ video {
   background-image: url('https://wallpapershome.com/images/pages/pic_h/24640.jpg');
 }
 
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-green-300 {
+  --tw-gradient-from: #86efac var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(134 239 172 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-blue-500 {
+  --tw-gradient-to: rgb(59 130 246 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #3b82f6 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-purple-600 {
+  --tw-gradient-to: #9333ea var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
 
+.bg-\[length\:100\%_5px\] {
+  background-size: 100% 5px;
+}
+
 .bg-center {
   background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-no-repeat {
@@ -1773,6 +1826,11 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pb-4 {
@@ -1970,6 +2028,11 @@ video {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-orange-400 {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -2462,6 +2525,18 @@ html {
     top: 2.5rem;
   }
 
+  .md\:bottom-\[100\%\] {
+    bottom: 100%;
+  }
+
+  .md\:right-\[16rem\] {
+    right: 16rem;
+  }
+
+  .md\:right-\[30rem\] {
+    right: 30rem;
+  }
+
   .md\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -2495,6 +2570,10 @@ html {
 
   .md\:mt-\[600px\] {
     margin-top: 600px;
+  }
+
+  .md\:mt-52 {
+    margin-top: 13rem;
   }
 
   .md\:block {
