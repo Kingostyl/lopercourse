@@ -483,7 +483,7 @@
                     <h2 class="text-2xl mb-3 font-bold">Lihat Motivasi Dari guru Kami!</h2>
                     <p class="text-base font-medium">Kenapa sih kamu harus belajar pemrograman? Kamu mau belajar tapi
                         engga punya motivasi dan bingung bagaimana cara memulainya?</p>
-                    <a href="https://www.youtube.com/watch?v=JMH-5j_AIvU&t=7s">
+                    <a onclick="goyt()" target="_blank">
                         <div class="flex items-start font-bold cursor-pointer mt-10">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 49" width="24"
                                 height="24" class="mr-2 cursor-pointer">
@@ -518,10 +518,8 @@
 
 
 
-    <main class="h-auto relative py-16 w-screen px-6 xl:px-36 my-16  dark:bg-slate-800 bg-[#f8f9fa]">
-        <h3
-            class="pb-5 flex justify-center relative right-[27.5rem] top-0 bottom-0 font-medium text-3xl dark:text-white">
-            Testimoni Siswa</h3>
+    <main class="h-auto relative py-16 w-screen px-6 xl:px-36  dark:bg-slate-800 bg-[#f8f9fa]">
+        <h3 class="pb-5 flex justify-center relative right-[30rem] top-0 bottom-0 font-medium text-3xl dark:text-white">Testimoni Siswa</h3>
         <div class="swiper mySwiper" id="swipper" onmousemove="auto()">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -732,6 +730,7 @@
 
 
 
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -741,6 +740,11 @@
     <script src="./script.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function goyt() {
+            window.open ('https://www.youtube.com/watch?v=JMH-5j_AIvU&t=7s')
+        }
     </script>
     <script>
         var swiper = new Swiper('.mySwiper', {
