@@ -13,4 +13,9 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  #simple-search {
+    color: #1b1b1b;
   }

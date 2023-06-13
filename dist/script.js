@@ -42,6 +42,9 @@ function menu() {
     document.getElementById("nav").classList.remove("w-full");
     document.getElementById("nav").classList.remove("fixed");
     document.getElementById("nav").classList.remove("z-50");
+    document.getElementById("nav").classList.add("shadow-lg");
+    document.getElementById("nav").classList.add("transition");
+    document.getElementById("nav").classList.add("duration-300");
     document.getElementById("nav").classList.remove("shadow-lg");
   }
 }
@@ -276,4 +279,27 @@ darkToggle.addEventListener("click", function () {
   }
 });
 
+if (
+  localStorage.getItem("color-theme") === "dark" ||
+  (!("color-theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
 
+
+const translateX = document.querySelectorAll(".translateX");
+const translateY = document.querySelectorAll(".translateY");
+window.addEventListener("scroll", () => {
+  let scroll = window.pageYOffset;
+  translateX.forEach((element) => {
+    let speed = element.dataset.speed;
+    element.style.transform = `translateX(${scroll * speed}px)`;
+  });
+  translateY.forEach((element) => {
+    let speed = element.dataset.speed;
+    element.style.transform = `translateY(${scroll * speed}px)`;
+  });
+});

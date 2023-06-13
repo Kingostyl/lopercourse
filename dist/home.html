@@ -17,11 +17,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/output.css">
+    <style>
+
+        .grd-glb {
+            display: grid;
+            grid-gap: 16px;
+            grid-template-columns: repeat(5, 300px);
+            grid-template-rows: 1fr;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 765px) {
+            .grd-glb {
+            display: grid;
+            grid-gap: 16px;
+            grid-template-columns: repeat(5, 300px);
+            grid-template-rows: 1fr;
+            scale: 0.4;
+            justify-content: center;
+        }
+        }
+    </style>
 </head>
 
 <body class="bdy font-quicksand overflow-x-hidden scroll-smooth dark:bg-dark">
     <div class="overflow-x-hidden dark:bg-slate-800 bg-gray-50 md:h-full bg-cover w-full">
-        <header id="nav">
+        <header id="nav" class="">
             <div class="relative z-20">
                 <div class="px-6  md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-1">
 
@@ -66,7 +87,7 @@
                                                     </svg>
                                                 </div>
                                                 <input type="text" id="simple-search"
-                                                    class="border  block pl-8 md:w-72 w-full h-12 border-gray-300 rounded-lg outline-none"
+                                                    class="border  block pl-8 md:w-72 w-full h-12  border-gray-300 rounded-lg outline-none"
                                                     placeholder="Apa yang ingin anda pelajari?" required>
                                             </div>
                                         </div>
@@ -231,51 +252,78 @@
                     Bangun Karirmu Sebagai Developer Profesional
                 </h1>
 
-                <div class="mt-32 grid items-center justify-center px-10 md:px-3">
-
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
-                            <div class=" translate-y-0 md:translate-y-32">
-                                <img class="border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
-                                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
-                            <div>
-                                <img class="border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
-                                    src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class=" grid gap-4" data-aos="fade-up" data-aos-duration="3000">
-
-                            <div class=" -translate-y-20 md:translate-y-32">
-                                <img class="border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
-                                    src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="grid gap-4" data-aos="fade-up" data-aos-duration="2000">
-                            <div>
-                                <img class=" border-4 border-dark dark:border-white h-auto max-w-full rounded-lg"
-                                    src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                                    alt="">
+                <div class="mt-32 items-center justify-center px-10 md:px-3">
+                    <main class="">
+                        <section class="grd-glb">
+                            <div class="relative translateY" data-speed="-0.1">
+                                <figure class="absolute z-10">
+                                    <img class=" h-auto max-w-full  rounded-2xl"
+                                        src="https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                                        alt="">
+                                </figure>
+                                <figure class="absolute -top-1 bottom-0 -right-[170px]"><img
+                                        src="https://www.apple.com/v/ios/ios-17-preview/a/images/overview/hero/hero_shadow_vertical__b0lf5obmrweu_large_2x.png"
+                                        alt="" class="w-[600px] h-[550px] -z-50"></figure>
                             </div>
 
-                        </div>
-                    </div>
+
+                            <div class="relative translateY" data-speed="-0.40">
+                                <figure class="absolute top-32 z-10">
+                                    <img class=" h-auto max-w-full  rounded-2xl"
+                                        src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                                        alt="">
+                                </figure>
+                                <figure class="absolute top-32 bottom-0 -right-[170px]"><img
+                                        src="https://www.apple.com/v/ios/ios-17-preview/a/images/overview/hero/hero_shadow_vertical__b0lf5obmrweu_large_2x.png"
+                                        alt="" class="w-[600px] h-[550px] -z-50"></figure>
+                            </div>
+
+                            <div class="relative translateY" data-speed="-0.20">
+                                <figure class="absolute top-16 z-10">
+                                    <img class=" h-auto max-w-full  rounded-2xl"
+                                        src="https://images.unsplash.com/photo-1603969280040-3bbb77278211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                        alt="">
+                                </figure>
+                                <figure class="absolute top-16 bottom-0 -right-[170px]"><img
+                                        src="https://www.apple.com/v/ios/ios-17-preview/a/images/overview/hero/hero_shadow_vertical__b0lf5obmrweu_large_2x.png"
+                                        alt="" class="w-[600px] h-[550px] -z-50"></figure>
+                            </div>
+
+
+                            <div class="relative  translateY" data-speed="-0.40">
+                                <figure class="absolute top-32 z-10">
+                                    <img class=" h-auto max-w-full  rounded-2xl"
+                                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                        alt="">
+                                </figure>
+                                <figure class="absolute top-32 bottom-0 -right-[170px]"><img
+                                        src="https://www.apple.com/v/ios/ios-17-preview/a/images/overview/hero/hero_shadow_vertical__b0lf5obmrweu_large_2x.png"
+                                        alt="" class="w-[600px] h-[550px] -z-50"></figure>
+                            </div>
+
+                            <div class="relative translateY" data-speed="-0.1">
+                                <figure class="absolute z-10">
+                                    <img class=" h-auto max-w-full  rounded-2xl"
+                                        src="https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                        alt="">
+                                </figure>
+                                <figure class="absolute -top-1 bottom-0 -right-[170px]"><img
+                                        src="https://www.apple.com/v/ios/ios-17-preview/a/images/overview/hero/hero_shadow_vertical__b0lf5obmrweu_large_2x.png"
+                                        alt="" class="w-[600px] h-[550px] -z-50"></figure>
+                            </div>
+                        </section>
+                    </main>
 
                 </div>
             </div>
 
             <div
-                class="text-dark dark:text-white px-1 md:px-0 mt-0 md:mt-52 flex flex-col items-center justify-center gap-10 py-8">
+                class="text-dark dark:text-white px-1 md:px-0 mb-[30px] mt-[300px] md:mt-[600px] flex flex-col items-center justify-center gap-10 py-8">
                 <p class="text-xl md:text-3xl font-semibold text-center px-2 lg:px-72">
                     lopercourse menyediakan layanan kursus IT untuk memulai dunia baru dan hal baru</p>
                 <button
                     class=" w-[150px] flex items-center justify-center py-3 text-white font-semibold rounded-3xl scroll-smooth dark:bg-white dark:text-dark bg-dark "><a
-                        href="#roadmap">road map</a></button>
+                        href="#roadmap">Road map</a></button>
             </div>
         </main>
 
@@ -285,7 +333,7 @@
             <div class="w-full lg:w-[933px] bg-dark dark:bg-white rounded-lg h-[100px] flex gap-4 items-center px-6">
                 <img src="https://storage.googleapis.com/cms-storage-bucket/a40ceb6e5d342207de7b.png" alt=""
                     class="w-[50px] h-[54px]">
-                <div class="flex gap-3 items-center">
+                <div class="flex justify-between w-full items-center">
                     <button class="font-medium dark:text-dark text-white">Priit, ada promo loh cek sekarang</button>
                     <i class="fa-solid fa-arrow-right w-10 h-10 text-white dark:text-dark flex items-center"></i>
                 </div>
@@ -344,7 +392,7 @@
 
             <span class="text-2xl md:text-4xl font-semibold dark:text-white text-dark">
                 <span
-                    class="ful bg-gradient-to-r  from-green-300 via-blue-500 to-purple-600 bg-[length:100%_5px] bg-no-repeat bg-bottom">
+                    class="ful">
                     Kamu bisa
                 </span>
                 belajar dan berkembang
@@ -353,8 +401,8 @@
 
             <div class="w-full items-center justify-center flex flex-col gap-4">
                 <div
-                    class="w-auto md:w-[1160px] justify-between px-2 md:px-10 items-center flex-wrap md:flex md:flex-nowrap py-6 md:py-0 h-auto md:h-[320px] bg-[#f7f7f7] text-dark rounded-2xl">
-                    <div class=" flex flex-col gap-2 justify-start items-start">
+                    class="w-auto md:w-[1160px]  justify-between px-2 md:px-10 items-center flex-wrap md:flex md:flex-nowrap py-6 md:py-0 h-auto md:h-[320px] bg-[#f7f7f7] text-dark rounded-2xl">
+                    <div class=" flex flex-col gap-3 justify-start items-start">
                         <h1 class="text-xl md:text-3xl font-[600] w-auto md:w-[60%]">Dengan program berorientasi praktik
                         </h1>
                         <p style="line-height: 27px;" class="text-[16px] w-auto md:w-[75%] md:text-[20px] font-medium">
@@ -365,12 +413,12 @@
 
 
                     <img src="https://d30ql1y9posr4b.cloudfront.net/id-idn/tild6636-3238-4261-b735-316236383334__ind-main-ill-11.svg"
-                        alt="">
+                        alt="" class="left-16 relative">
                 </div>
                 <div class="flex justify-between flex-wrap md:flex-nowrap gap-4 md:gap-4">
                     <div
                         class="w-auto md:w-[570px] justify-between px-2 md:px-10 items-center flex flex-col py-6 md:py-3 h-auto md:h-[480px] bg-[#f7f7f7] text-dark rounded-2xl">
-                        <div class=" flex flex-col gap-2 justify-center">
+                        <div class=" flex flex-col gap-3 justify-center">
                             <h1 class="text-xl md:text-3xl font-[600] w-auto md:w-[70%]">Dengan platform pembelajaran
                                 interaktif</h1>
                             <p style="line-height: 27px;"
@@ -386,7 +434,7 @@
 
                     <div
                         class="w-auto md:w-[570px] justify-between px-2 md:px-10 items-center flex flex-col py-6 md:py-3 h-auto md:h-[480px] bg-[#f7f7f7] text-dark rounded-2xl">
-                        <div class=" flex flex-col gap-2 justify-center">
+                        <div class=" flex flex-col gap-3 justify-center">
                             <h1 class="text-xl md:text-3xl font-[600] w-auto md:w-[70%]">Dengan tim support</h1>
                             <p style="line-height: 27px;"
                                 class="text-[16px] w-auto md:w-[80%] md:text-[20px] font-medium">Dari profesional
@@ -402,7 +450,7 @@
                 <div
                     class="w-auto md:w-[1160px] gap-1 md:gap-32 justify-between px-2 md:px-10 items-center flex-wrap md:flex md:flex-nowrap py-6 md:py-0 h-auto md:h-[320px] bg-[#f7f7f7] text-dark rounded-2xl">
                     <img src="https://d30ql1y9posr4b.cloudfront.net/id-idn/tild3263-3838-4635-a162-386464383131__ind-main-ill-13.svg"
-                        alt="">
+                        alt="" class="relative right-10">
                     <div class=" flex flex-col gap-2 justify-start items-start">
                         <h1 class="text-xl md:text-3xl font-[600] w-auto md:w-[80%]">Dengan bantuan untuk mendapat
                             pekerjaan</h1>
@@ -500,28 +548,13 @@
             </div>
         </div>
 
-        <div class="flex gap-10 flex-wrap items-center justify-center">
-            <div
-                class="bg-[#f8f9fa] dark:bg-slate-600 hover:translate-y-0 transition duration-300 -translate-y-5 w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
-                <img src="https://storage.googleapis.com/cms-storage-bucket/f3e315ddcd534a574bb5.svg" alt="" class="">
-            </div>
-            <div
-                class="bg-[#f8f9fa] dark:bg-slate-600  w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
-                <img src="https://storage.googleapis.com/cms-storage-bucket/0b591100c77c7f332b7f.svg" alt=""
-                    class=" w-[110px]">
-            </div>
-            <div
-                class="bg-[#f8f9fa] dark:bg-slate-600 hover:translate-y-0 transition duration-300 translate-y-5 w-[220px] h-[220px] drop-shadow-sm shadow-xl rounded-lg flex items-center justify-center">
-                <img src="https://storage.googleapis.com/cms-storage-bucket/d10d50462c35626a2ed8.svg" alt="">
-            </div>
-        </div>
 
         <div class="my-32">
             <div class="flex flex-col gap-9 items-center justify-center ">
-                <h1 class="text-center font-medium text-gray-600 text-2xl dark:text-white">A Global Open Source
-                    Community</h1>
-                <p class="text-center font-semibold text-5xl lg:w-[50%] dark:text-white">Supported by Google, open
-                    to everyone
+                <h1 class="text-center font-medium text-gray-600 text-2xl dark:text-white">Sumber Terbuka Global
+                    Masyarakat</h1>
+                <p class="text-center font-semibold text-5xl lg:w-[50%] dark:text-white">Didukung oleh Google, buka
+                    untuk semua orang
                 </p>
                 <p class="text-center font-medium text-base lg:w-[50%] dark:text-white">Berkolaborasi pada kerangka
                     kerja sumber
@@ -536,7 +569,7 @@
 
     <main class="h-auto relative py-16 w-screen px-6 xl:px-36  dark:bg-slate-800 bg-[#f8f9fa]">
         <h3
-            class="pb-5 flex justify-center relative right-0 md:right-[30rem] top-0 bottom-0 font-medium text-3xl dark:text-white">
+            class="pb-5 flex justify-center relative right-0 md:right-[27.5rem] top-0 bottom-0 font-medium text-3xl dark:text-white">
             Testimoni Siswa</h3>
         <div class="swiper mySwiper" id="swipper" onmousemove="auto()">
             <div class="swiper-wrapper">
@@ -661,7 +694,7 @@
     </main>
 
 
-    <footer class="bg-white h-auto w-full my-5 md:px-32 px-4 dark:text-white dark:bg-dark">
+    <footer class="bg-white h-auto w-full my-5 mt-20 md:px-32 px-4 dark:text-white dark:bg-dark">
         <div class="flex gap-32 md:justify-center flex-wrap md:flex-nowrap">
             <div class="flex flex-col gap-7">
                 <div class="flex gap-2">
@@ -761,7 +794,7 @@
     </script>
     <script>
         function goyt() {
-            window.open ('https://www.youtube.com/watch?v=JMH-5j_AIvU&t=7s')
+            window.open('https://www.youtube.com/watch?v=JMH-5j_AIvU&t=7s')
         }
     </script>
     <script>
