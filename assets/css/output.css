@@ -582,10 +582,6 @@ video {
   bottom: 0.5rem;
 }
 
-.bottom-\[100px\] {
-  bottom: 100px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1672,6 +1668,18 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -2797,10 +2805,6 @@ html {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-\[5\%\] {
-    width: 5%;
   }
 
   .lg\:translate-x-0 {
